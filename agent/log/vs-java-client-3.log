@@ -1,0 +1,95 @@
+'2022-01-11 14:27:07 INFO: Filename: /home/agent/conf/client.properties
+''2022-01-11 14:27:36 INFO: No task queued
+''2022-01-11 14:27:37 INFO: No task queued
+''2022-01-11 14:27:54 INFO: No task queued
+''2022-01-11 14:28:14 INFO: No task queued
+''2022-01-11 14:28:34 INFO: No task queued
+''2022-01-11 14:28:54 INFO: No task queued
+''2022-01-11 14:29:14 INFO: No task queued
+''2022-01-11 14:29:34 INFO: No task queued
+''2022-01-11 14:29:54 INFO: No task queued
+''2022-01-11 14:30:14 INFO: No task queued
+''2022-01-11 14:30:34 INFO: No task queued
+''2022-01-11 14:30:54 INFO: Executing task: test_connection
+''2022-01-11 14:30:58 INFO: Set status of task test_connection to running
+''2022-01-11 14:31:00 INFO: Testing JDBC connection pg_source_nw
+''2022-01-11 14:31:15 INFO: No task queued
+''2022-01-11 14:31:35 INFO: No task queued
+''2022-01-11 14:31:55 INFO: No task queued
+''2022-01-11 14:32:35 INFO: No task queued
+''2022-01-11 14:32:40 SEVERE: Connection pg_source_nw could not be established
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:272)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:52)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:216)
+	at org.postgresql.Driver.makeConnection(Driver.java:404)
+	at org.postgresql.Driver.connect(Driver.java:272)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at vaultspeed.agent.jdbc.JDBCConnection.getConnection(JDBCConnection.java:54)
+	at vaultspeed.agent.jdbc.JDBCConnection.<init>(JDBCConnection.java:33)
+	at vaultspeed.agent.execution.TestConnection.testConnection(TestConnection.java:59)
+	at vaultspeed.agent.execution.TaskExecutor.test_connection(TaskExecutor.java:110)
+	at vaultspeed.agent.execution.TaskExecutor.Execute_agent_function(TaskExecutor.java:59)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:33)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: vs-pg-nw
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 17 more
+
+''2022-01-11 14:32:40 SEVERE: Connection pg_source_nw could not be established
+java.lang.Exception: Connection pg_source_nw could not be established
+	at vaultspeed.agent.jdbc.JDBCConnection.getConnection(JDBCConnection.java:63)
+	at vaultspeed.agent.jdbc.JDBCConnection.<init>(JDBCConnection.java:33)
+	at vaultspeed.agent.execution.TestConnection.testConnection(TestConnection.java:59)
+	at vaultspeed.agent.execution.TaskExecutor.test_connection(TaskExecutor.java:110)
+	at vaultspeed.agent.execution.TaskExecutor.Execute_agent_function(TaskExecutor.java:59)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:33)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+''2022-01-11 14:32:42 INFO: Set status of task test_connection to error
+''2022-01-11 14:32:46 INFO: No task queued
+''2022-01-11 14:32:54 INFO: No task queued
+''2022-01-11 14:33:14 INFO: Executing task: test_connection
+''2022-01-11 14:33:18 INFO: Set status of task test_connection to running
+''2022-01-11 14:33:20 INFO: Testing JDBC connection pg_source_nw
+''2022-01-11 14:33:20 INFO: JDBC connection pg_source_nw works
+''2022-01-11 14:33:22 INFO: Set status of task test_connection to done
+''2022-01-11 14:33:34 INFO: No task queued
+''2022-01-11 14:33:54 INFO: No task queued
+''2022-01-11 14:34:15 INFO: Executing task: get_src_metadata
+''2022-01-11 14:34:19 INFO: Set status of task get_src_metadata to running
+''2022-01-11 14:34:19 INFO: obtaining metadata from the source
+''2022-01-11 14:34:21 INFO: Obtaining source metadata.
+''2022-01-11 14:34:21 INFO: Obtaining object metadata from database links.
+''2022-01-11 14:34:21 INFO: Successfully obtained the metadata from database links.
+''2022-01-11 14:34:23 INFO: Set status of task get_src_metadata to done
+''2022-01-11 14:34:34 INFO: Executing task: put_generated_files
+''2022-01-11 14:34:38 INFO: Set status of task put_generated_files to running
+''2022-01-11 14:34:40 INFO: Uploading file northwind_db_link_tables.csv
+''2022-01-11 14:34:42 INFO: File northwind_db_link_tables.csv successfully uploaded.
+''2022-01-11 14:34:44 INFO: Set status of task put_generated_files to done
+''2022-01-11 14:34:54 INFO: No task queued
+''2022-01-11 14:35:14 INFO: No task queued
+''2022-01-11 14:35:34 INFO: No task queued
+''2022-01-11 14:35:54 INFO: No task queued
+''2022-01-11 14:36:14 INFO: No task queued
+''2022-01-11 14:36:34 INFO: No task queued
+''2022-01-11 14:36:54 INFO: No task queued
+''2022-01-11 14:37:14 INFO: No task queued
+''2022-01-11 14:37:34 INFO: No task queued
+''2022-01-11 14:37:56 INFO: No task queued
+''2022-01-11 14:38:14 INFO: No task queued
+'

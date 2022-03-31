@@ -1,0 +1,153 @@
+version: '3.8'
+x-airflow-common:
+    &airflow-common
+    
+    image: 'vs/airflow:2.2.3'
+    #build: ./airflow
+    environment:
+        &airflow-common-env
+        AIRFLOW__CORE__EXECUTOR: LocalExecutor
+        AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
+        AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@airflow-postgres/airflow
+        AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+        AIRFLOW__CORE__FERNET_KEY: ''
+        AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+        AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+        AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
+        AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: 30
+        AIRFLOW__WEBSERVER__DAG_DEFAULT_VIEW: 'graph'
+        _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+    volumes:
+        - ./airflow/dags:/opt/airflow/dags
+        - ./airflow/logs:/opt/airflow/logs
+        - ./airflow/plugins:/opt/airflow/plugins
+        - ./airflow/jars:/opt/airflow/jars
+    user: "${AIRFLOW_UID:-50000}:0"
+    depends_on:
+        &airflow-common-depends-on
+        #redis:
+        #    condition: service_healthy
+        airflow-postgres:
+            condition: service_healthy
+services:
+    vs-agent:
+        image: vs/agent:5.0.0.0
+        hostname: 'agent-pi'
+        volumes:
+            - ./agent/conf:/home/agent/conf
+            - ./agent/generated_files:/home/agent/generated_files
+            - ./agent/log:/home/agent/log
+    airflow-postgres:
+        image: postgres:12-alpine
+        environment:
+            - POSTGRES_USER=airflow
+            - POSTGRES_PASSWORD=airflow
+            - POSTGRES_DB=airflow
+        healthcheck:
+            test: ["CMD", "pg_isready", "-U", "airflow"]
+            interval: 5s
+            retries: 5
+        #restart: always
+    airflow-webserver:
+        <<: *airflow-common
+        command: webserver --port 8080
+        ports:
+            - 8888:8080
+        healthcheck:
+            test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+            interval: 10s
+            timeout: 10s
+            retries: 5
+        #restart: always
+        depends_on:
+            <<: *airflow-common-depends-on
+            airflow-init:
+                condition: service_completed_successfully
+            
+    airflow-scheduler:
+        <<: *airflow-common
+        command: scheduler
+        healthcheck:
+            test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
+            interval: 10s
+            timeout: 10s
+            retries: 5
+        #restart: always
+        depends_on:
+            <<: *airflow-common-depends-on
+            airflow-init:
+                condition: service_completed_successfully
+    airflow-init:
+        <<: *airflow-common
+        entrypoint: /bin/sh
+        # yamllint disable rule:line-length
+        command:
+        - -c
+        - |
+            mkdir -p /sources/logs /sources/dags /sources/plugins
+            chown -R "${AIRFLOW_UID}:0" /sources/logs
+            chown -R "${AIRFLOW_UID}:0" /sources/dags
+            chown -R "${AIRFLOW_UID}:0" /sources/plugins
+            airflow db upgrade
+            airflow users create \
+                --username airflow \
+                --firstname Admin \
+                --lastname Admin \
+                --role Admin \
+                --email airflow-admin@vaultspeed.com \
+                --password airflow
+            airflow version
+        # yamllint enable rule:line-length
+        environment:
+            <<: *airflow-common-env
+            _AIRFLOW_DB_UPGRADE: 'true'
+            _AIRFLOW_WWW_USER_CREATE: 'true'
+            _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
+            _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
+        user: "0:0"
+        volumes:
+            - ./airflow:/sources
+    pgadmin:
+        image: dpage/pgadmin4
+        environment: 
+            - PGADMIN_DEFAULT_EMAIL=admin@vaultspeed.com
+            - PGADMIN_DEFAULT_PASSWORD=Vs123456
+        ports:
+            - "8888:80"
+    vs-pg-target:
+        image: postgres:12-alpine
+        environment:
+            - POSTGRES_USER=vaultspeed
+            - POSTGRES_PASSWORD=Vs123456
+            - POSTGRES_DB=vs_dv
+            - POSTGRES_HOST_AUTH_METHOD=md5
+        ports:
+            - "5432:5432"
+        volumes:
+          - ./pg-target:/docker-entrypoint-initdb.d
+    vs-pg-source-moto:
+        image: postgres:12-alpine
+        environment:
+            - POSTGRES_USER=vaultspeed
+            - POSTGRES_PASSWORD=Vs123456
+            - POSTGRES_DB=moto
+            - POSTGRES_HOST_AUTH_METHOD=md5
+        ports:
+            - "5433:5432"
+        volumes:
+          - ./moto-src/scripts:/docker-entrypoint-initdb.d
+    vs-pg-source-nw:
+        image: postgres:12-alpine
+        environment:
+            - POSTGRES_USER=vaultspeed
+            - POSTGRES_PASSWORD=Vs123456
+            - POSTGRES_DB=northwind
+            - POSTGRES_HOST_AUTH_METHOD=md5
+        ports:
+            - "5434:5432"
+        volumes:
+          - ./nw-src:/docker-entrypoint-initdb.d
+    vs-metabase:
+        image: metabase/metabase
+        ports:
+            - "3000:3000"

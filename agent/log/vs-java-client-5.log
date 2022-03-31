@@ -1,0 +1,1559 @@
+'2021-12-31 12:46:31 INFO: Filename: /home/agent/conf/client.properties
+''2021-12-31 12:47:00 INFO: No task queued
+''2021-12-31 12:47:01 INFO: Executing task: auto_deploy
+''2021-12-31 12:47:05 INFO: Set status of task auto_deploy to running
+''2021-12-31 12:47:19 INFO: No task queued
+''2021-12-31 12:47:39 INFO: No task queued
+''2021-12-31 12:47:59 INFO: No task queued
+''2021-12-31 12:48:30 INFO: 1/18 Deploying 30_00_GENERATE_DDL_SCHEMAS.sql
+''2021-12-31 12:48:34 INFO: 2/18 Deploying 30_00_GENERATE_DDL_SCHEMAS_moto_mktg.sql
+''2021-12-31 12:48:40 INFO: 3/18 Deploying 30_00_GENERATE_DDL_SCHEMAS_moto_sales.sql
+''2021-12-31 12:48:40 INFO: No task queued
+''2021-12-31 12:48:44 INFO: 4/18 Deploying 30_01_GENERATE_DDL_moto_fmc_20211231_122742.sql
+''2021-12-31 12:48:48 INFO: 5/18 Deploying 30_02_GENERATE_DDL_moto_mktg_moto_mktg_dfv_20211231_122742.sql
+''2021-12-31 12:48:52 INFO: 6/18 Deploying 30_02_GENERATE_DDL_moto_sales_moto_sales_dfv_20211231_122742.sql
+''2021-12-31 12:48:57 INFO: 7/18 Deploying 30_03_GENERATE_DDL_EXT_moto_mktg_moto_mktg_ext_20211231_122742.sql
+''2021-12-31 12:49:00 INFO: No task queued
+''2021-12-31 12:49:02 INFO: 8/18 Deploying 30_03_GENERATE_DDL_EXT_moto_sales_moto_sales_ext_20211231_122742.sql
+''2021-12-31 12:49:06 INFO: 9/18 Deploying 30_04_GENERATE_DDL_STG_moto_mktg_moto_mktg_stg_20211231_122742.sql
+''2021-12-31 12:49:10 INFO: 10/18 Deploying 30_04_GENERATE_DDL_STG_moto_sales_moto_sales_stg_20211231_122742.sql
+''2021-12-31 12:49:14 INFO: 11/18 Deploying 30_05_GENERATE_DDL_DV_TEMP_moto_dv_fl_20211231_122742.sql
+''2021-12-31 12:49:19 INFO: No task queued
+''2021-12-31 12:49:20 INFO: 12/18 Deploying 30_05_GENERATE_DDL_DV_moto_dv_fl_20211231_122742.sql
+''2021-12-31 12:49:25 INFO: 13/18 Deploying 30_06_GENERATE_DDL_BV_moto_dv_bv_20211231_122742.sql
+''2021-12-31 12:49:29 INFO: 14/18 Deploying 30_11_GENERATE_DDL_INI_moto_mktg_moto_mktg_ini_20211231_122742.sql
+''2021-12-31 12:49:33 INFO: 15/18 Deploying 30_11_GENERATE_DDL_INI_moto_sales_moto_sales_ini_20211231_122742.sql
+''2021-12-31 12:49:37 INFO: 16/18 Deploying 30_12_GENERATE_DDL_CDC_moto_mktg_moto_mktg_cdc_20211231_122742.sql
+''2021-12-31 12:49:41 INFO: 17/18 Deploying 30_12_GENERATE_DDL_CDC_moto_sales_moto_sales_cdc_20211231_122742.sql
+''2021-12-31 12:49:45 INFO: 18/18 Deploying 30_GENERATE_PROC_moto_proc_20211231_122742.sql
+''2021-12-31 12:49:47 SEVERE: /home/agent/generated_files/deployed_files/30_DDL.zip
+java.nio.file.NoSuchFileException: /home/agent/generated_files/deployed_files/30_DDL.zip
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixCopyFile.copyFile(UnixCopyFile.java:243)
+	at sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:581)
+	at sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:253)
+	at java.nio.file.Files.copy(Files.java:1274)
+	at vaultspeed.agent.execution.AutoDeploy.deployZip(AutoDeploy.java:208)
+	at vaultspeed.agent.execution.AutoDeploy.autodeploy(AutoDeploy.java:120)
+	at vaultspeed.agent.execution.TaskExecutor.auto_deploy(TaskExecutor.java:93)
+	at vaultspeed.agent.execution.TaskExecutor.Execute_agent_function(TaskExecutor.java:55)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:33)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+''2021-12-31 12:49:49 INFO: Set status of task auto_deploy to error
+''2021-12-31 12:49:53 INFO: No task queued
+''2021-12-31 12:49:58 INFO: No task queued
+''2021-12-31 12:49:59 INFO: No task queued
+''2021-12-31 12:50:18 INFO: No task queued
+''2021-12-31 12:50:38 INFO: No task queued
+''2021-12-31 12:50:58 INFO: No task queued
+''2021-12-31 12:51:18 INFO: No task queued
+''2021-12-31 12:51:38 INFO: No task queued
+''2021-12-31 12:51:58 INFO: No task queued
+''2021-12-31 12:52:18 INFO: No task queued
+''2021-12-31 12:52:39 INFO: No task queued
+''2021-12-31 12:52:58 INFO: No task queued
+''2021-12-31 12:53:18 INFO: No task queued
+''2021-12-31 12:53:38 INFO: No task queued
+''2021-12-31 12:53:58 INFO: No task queued
+''2021-12-31 12:54:18 INFO: No task queued
+''2021-12-31 12:54:38 INFO: No task queued
+''2021-12-31 12:54:58 INFO: No task queued
+''2021-12-31 12:55:18 INFO: No task queued
+''2021-12-31 12:55:38 INFO: No task queued
+''2021-12-31 12:55:58 INFO: No task queued
+''2021-12-31 12:56:18 INFO: No task queued
+''2021-12-31 12:56:38 INFO: No task queued
+''2021-12-31 12:56:58 INFO: No task queued
+''2021-12-31 12:57:18 INFO: No task queued
+''2021-12-31 12:57:38 INFO: No task queued
+''2021-12-31 12:57:58 INFO: No task queued
+''2021-12-31 12:58:18 INFO: No task queued
+''2021-12-31 12:58:38 INFO: No task queued
+''2021-12-31 12:58:58 INFO: No task queued
+''2021-12-31 12:59:18 INFO: No task queued
+''2021-12-31 12:59:38 INFO: No task queued
+''2021-12-31 12:59:58 INFO: No task queued
+''2021-12-31 13:00:18 INFO: No task queued
+''2021-12-31 13:00:38 INFO: No task queued
+''2021-12-31 13:00:58 INFO: No task queued
+''2021-12-31 13:01:18 INFO: No task queued
+''2021-12-31 13:01:38 INFO: No task queued
+''2021-12-31 13:01:58 INFO: No task queued
+''2021-12-31 13:02:18 INFO: No task queued
+''2021-12-31 13:02:38 INFO: No task queued
+''2021-12-31 13:02:59 INFO: No task queued
+''2021-12-31 13:03:18 INFO: No task queued
+''2021-12-31 13:03:38 INFO: No task queued
+''2021-12-31 13:03:58 INFO: No task queued
+''2021-12-31 13:04:18 INFO: No task queued
+''2021-12-31 13:04:38 INFO: No task queued
+''2021-12-31 13:04:58 INFO: No task queued
+''2021-12-31 13:05:18 INFO: No task queued
+''2021-12-31 13:05:38 INFO: No task queued
+''2021-12-31 13:05:58 INFO: No task queued
+''2021-12-31 13:06:18 INFO: No task queued
+''2021-12-31 13:06:38 INFO: No task queued
+''2021-12-31 13:06:58 INFO: No task queued
+''2021-12-31 13:07:18 INFO: No task queued
+''2021-12-31 13:07:38 INFO: No task queued
+''2021-12-31 13:07:58 INFO: No task queued
+''2021-12-31 13:08:18 INFO: No task queued
+''2021-12-31 13:08:38 INFO: No task queued
+''2021-12-31 13:08:58 INFO: No task queued
+''2021-12-31 13:09:18 INFO: No task queued
+''2021-12-31 13:09:38 INFO: No task queued
+''2021-12-31 13:09:58 INFO: No task queued
+''2021-12-31 13:10:18 INFO: No task queued
+''2021-12-31 13:10:38 INFO: No task queued
+''2021-12-31 13:10:58 INFO: No task queued
+''2021-12-31 13:11:18 INFO: No task queued
+''2021-12-31 13:11:38 INFO: No task queued
+''2021-12-31 13:11:58 INFO: No task queued
+''2021-12-31 13:12:18 INFO: No task queued
+''2021-12-31 13:12:38 INFO: No task queued
+''2021-12-31 13:12:58 INFO: No task queued
+''2021-12-31 13:13:18 INFO: No task queued
+''2021-12-31 13:13:38 INFO: No task queued
+''2021-12-31 13:14:00 INFO: No task queued
+''2021-12-31 13:14:18 INFO: No task queued
+''2021-12-31 13:14:38 INFO: No task queued
+''2021-12-31 13:14:58 INFO: No task queued
+''2021-12-31 13:15:18 INFO: No task queued
+''2021-12-31 13:15:38 INFO: No task queued
+''2021-12-31 13:15:58 INFO: No task queued
+''2021-12-31 13:16:18 INFO: No task queued
+''2021-12-31 13:16:38 INFO: No task queued
+''2021-12-31 13:16:58 INFO: No task queued
+''2021-12-31 13:17:18 INFO: No task queued
+''2021-12-31 13:17:38 INFO: No task queued
+''2021-12-31 13:17:58 INFO: No task queued
+''2021-12-31 13:18:18 INFO: No task queued
+''2021-12-31 13:18:38 INFO: No task queued
+''2021-12-31 13:18:58 INFO: No task queued
+''2021-12-31 13:19:18 INFO: No task queued
+''2021-12-31 13:19:38 INFO: No task queued
+''2021-12-31 13:19:58 INFO: No task queued
+''2021-12-31 13:20:18 INFO: No task queued
+''2021-12-31 13:20:38 INFO: No task queued
+''2021-12-31 13:21:00 INFO: No task queued
+''2021-12-31 13:21:18 INFO: Executing task: auto_deploy
+''2021-12-31 13:21:22 INFO: Set status of task auto_deploy to running
+''2021-12-31 13:21:30 INFO: 1/390 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_lnk_customers_customers_parent_hier_hierarchy_lnk.sql
+''2021-12-31 13:21:39 INFO: No task queued
+''2021-12-31 13:21:49 SEVERE: Error occurred while executing SQL Query (file: ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_lnk_customers_customers_parent_hier_hierarchy_lnk.sql, query: DROP VIEW IF EXISTS "moto_dv_bv"."lnk_customers_customers_parent_hier";
+CREATE   VIEW "moto_dv_bv"."lnk_customers_customers_parent_hier"  AS 
+	WITH RECURSIVE "all_view"("customers_parent_hkey") AS 
+	( 
+		SELECT 
+			  "lnk_src"."customers_hkey" AS "customers_hkey"
+			, "lnk_src"."customers_parent_hkey" AS "customers_parent_hkey"
+			, "lnk_src"."load_date" AS "load_date"
+			, "lnk_src"."load_cycle_id" AS "load_cycle_id"
+		FROM "moto_dv_fl"."lnk_customers_customers_parent" "lnk_src"
+		INNER JOIN "moto_dv_fl"."hub_customers" "hub_fk_src" ON  "hub_fk_src"."customers_hkey" = "lnk_src"."customers_parent_hkey"
+		WHERE  "hub_fk_src"."load_cycle_id" = - 1 AND "lnk_src"."load_cycle_id" > 0
+		UNION ALL 
+		SELECT 
+			  "lnk_src"."customers_hkey" AS "customers_hkey"
+			, "lnk_src"."customers_parent_hkey" AS "customers_parent_hkey"
+			, "lnk_src"."load_date" AS "load_date"
+			, "lnk_src"."load_cycle_id" AS "load_cycle_id"
+		FROM "moto_dv_fl"."lnk_customers_customers_parent" "lnk_src"
+		INNER JOIN "all_view" "all_view" ON  "all_view"."customers_hkey" = "lnk_src"."customers_parent_hkey"
+	)
+	SELECT 
+		  "all_view"."customers_hkey" AS "customers_hkey"
+		, "all_view"."customers_parent_hkey" AS "customers_parent_hkey"
+		, "all_view"."load_date" AS "load_date"
+		, "all_view"."load_cycle_id" AS "load_cycle_id"
+	FROM "all_view" "all_view"
+	;
+
+ 
+ ): ERROR: column all_view.customers_hkey does not exist
+  Position: 953
+org.postgresql.util.PSQLException: ERROR: column all_view.customers_hkey does not exist
+  Position: 953
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:168)
+	at org.postgresql.jdbc.PgCallableStatement.executeWithFlags(PgCallableStatement.java:78)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:135)
+	at org.postgresql.jdbc.PgCallableStatement.executeUpdate(PgCallableStatement.java:65)
+	at vaultspeed.agent.execution.AutoDeploy.executeSQL(AutoDeploy.java:328)
+	at vaultspeed.agent.execution.AutoDeploy.deployZip(AutoDeploy.java:180)
+	at vaultspeed.agent.execution.AutoDeploy.autodeploy(AutoDeploy.java:120)
+	at vaultspeed.agent.execution.TaskExecutor.auto_deploy(TaskExecutor.java:93)
+	at vaultspeed.agent.execution.TaskExecutor.Execute_agent_function(TaskExecutor.java:55)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:33)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+''2021-12-31 13:21:49 SEVERE: Error occurred while executing SQL Query (file: ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_lnk_customers_customers_parent_hier_hierarchy_lnk.sql, query: DROP VIEW IF EXISTS "moto_dv_bv"."lnk_customers_customers_parent_hier";
+CREATE   VIEW "moto_dv_bv"."lnk_customers_customers_parent_hier"  AS 
+	WITH RECURSIVE "all_view"("customers_parent_hkey") AS 
+	( 
+		SELECT 
+			  "lnk_src"."customers_hkey" AS "customers_hkey"
+			, "lnk_src"."customers_parent_hkey" AS "customers_parent_hkey"
+			, "lnk_src"."load_date" AS "load_date"
+			, "lnk_src"."load_cycle_id" AS "load_cycle_id"
+		FROM "moto_dv_fl"."lnk_customers_customers_parent" "lnk_src"
+		INNER JOIN "moto_dv_fl"."hub_customers" "hub_fk_src" ON  "hub_fk_src"."customers_hkey" = "lnk_src"."customers_parent_hkey"
+		WHERE  "hub_fk_src"."load_cycle_id" = - 1 AND "lnk_src"."load_cycle_id" > 0
+		UNION ALL 
+		SELECT 
+			  "lnk_src"."customers_hkey" AS "customers_hkey"
+			, "lnk_src"."customers_parent_hkey" AS "customers_parent_hkey"
+			, "lnk_src"."load_date" AS "load_date"
+			, "lnk_src"."load_cycle_id" AS "load_cycle_id"
+		FROM "moto_dv_fl"."lnk_customers_customers_parent" "lnk_src"
+		INNER JOIN "all_view" "all_view" ON  "all_view"."customers_hkey" = "lnk_src"."customers_parent_hkey"
+	)
+	SELECT 
+		  "all_view"."customers_hkey" AS "customers_hkey"
+		, "all_view"."customers_parent_hkey" AS "customers_parent_hkey"
+		, "all_view"."load_date" AS "load_date"
+		, "all_view"."load_cycle_id" AS "load_cycle_id"
+	FROM "all_view" "all_view"
+	;
+
+ 
+ ): ERROR: column all_view.customers_hkey does not exist
+  Position: 953
+java.lang.Exception: Error occurred while executing SQL Query (file: ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_lnk_customers_customers_parent_hier_hierarchy_lnk.sql, query: DROP VIEW IF EXISTS "moto_dv_bv"."lnk_customers_customers_parent_hier";
+CREATE   VIEW "moto_dv_bv"."lnk_customers_customers_parent_hier"  AS 
+	WITH RECURSIVE "all_view"("customers_parent_hkey") AS 
+	( 
+		SELECT 
+			  "lnk_src"."customers_hkey" AS "customers_hkey"
+			, "lnk_src"."customers_parent_hkey" AS "customers_parent_hkey"
+			, "lnk_src"."load_date" AS "load_date"
+			, "lnk_src"."load_cycle_id" AS "load_cycle_id"
+		FROM "moto_dv_fl"."lnk_customers_customers_parent" "lnk_src"
+		INNER JOIN "moto_dv_fl"."hub_customers" "hub_fk_src" ON  "hub_fk_src"."customers_hkey" = "lnk_src"."customers_parent_hkey"
+		WHERE  "hub_fk_src"."load_cycle_id" = - 1 AND "lnk_src"."load_cycle_id" > 0
+		UNION ALL 
+		SELECT 
+			  "lnk_src"."customers_hkey" AS "customers_hkey"
+			, "lnk_src"."customers_parent_hkey" AS "customers_parent_hkey"
+			, "lnk_src"."load_date" AS "load_date"
+			, "lnk_src"."load_cycle_id" AS "load_cycle_id"
+		FROM "moto_dv_fl"."lnk_customers_customers_parent" "lnk_src"
+		INNER JOIN "all_view" "all_view" ON  "all_view"."customers_hkey" = "lnk_src"."customers_parent_hkey"
+	)
+	SELECT 
+		  "all_view"."customers_hkey" AS "customers_hkey"
+		, "all_view"."customers_parent_hkey" AS "customers_parent_hkey"
+		, "all_view"."load_date" AS "load_date"
+		, "all_view"."load_cycle_id" AS "load_cycle_id"
+	FROM "all_view" "all_view"
+	;
+
+ 
+ ): ERROR: column all_view.customers_hkey does not exist
+  Position: 953
+	at vaultspeed.agent.execution.AutoDeploy.deployZip(AutoDeploy.java:205)
+	at vaultspeed.agent.execution.AutoDeploy.autodeploy(AutoDeploy.java:120)
+	at vaultspeed.agent.execution.TaskExecutor.auto_deploy(TaskExecutor.java:93)
+	at vaultspeed.agent.execution.TaskExecutor.Execute_agent_function(TaskExecutor.java:55)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:33)
+	at vaultspeed.agent.execution.TaskExecutor.call(TaskExecutor.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+''2021-12-31 13:21:51 INFO: Set status of task auto_deploy to error
+''2021-12-31 13:21:58 INFO: No task queued
+''2021-12-31 13:22:18 INFO: No task queued
+''2021-12-31 13:22:38 INFO: No task queued
+''2021-12-31 13:22:58 INFO: No task queued
+''2021-12-31 13:23:18 INFO: No task queued
+''2021-12-31 13:23:38 INFO: No task queued
+''2021-12-31 13:23:58 INFO: No task queued
+''2021-12-31 13:24:18 INFO: No task queued
+''2021-12-31 13:24:38 INFO: No task queued
+''2021-12-31 13:24:58 INFO: No task queued
+''2021-12-31 13:25:18 INFO: No task queued
+''2021-12-31 13:25:38 INFO: No task queued
+''2021-12-31 13:25:58 INFO: No task queued
+''2021-12-31 13:26:18 INFO: No task queued
+''2021-12-31 13:26:38 INFO: No task queued
+''2021-12-31 13:26:58 INFO: No task queued
+''2021-12-31 13:27:19 INFO: No task queued
+''2021-12-31 13:27:38 INFO: No task queued
+''2021-12-31 13:27:58 INFO: No task queued
+''2021-12-31 13:28:18 INFO: No task queued
+''2021-12-31 13:28:38 INFO: No task queued
+''2021-12-31 13:28:58 INFO: No task queued
+''2021-12-31 13:29:18 INFO: No task queued
+''2021-12-31 13:29:38 INFO: No task queued
+''2021-12-31 13:29:58 INFO: No task queued
+''2021-12-31 13:30:18 INFO: No task queued
+''2021-12-31 13:30:38 INFO: No task queued
+''2021-12-31 13:30:58 INFO: No task queued
+''2021-12-31 13:31:18 INFO: No task queued
+''2021-12-31 13:31:38 INFO: No task queued
+''2021-12-31 13:31:58 INFO: No task queued
+''2021-12-31 13:32:18 INFO: No task queued
+''2021-12-31 13:32:38 INFO: No task queued
+''2021-12-31 13:32:58 INFO: No task queued
+''2021-12-31 13:33:18 INFO: No task queued
+''2021-12-31 13:33:38 INFO: No task queued
+''2021-12-31 13:33:58 INFO: No task queued
+''2021-12-31 13:34:18 INFO: No task queued
+''2021-12-31 13:34:38 INFO: No task queued
+''2021-12-31 13:34:58 INFO: No task queued
+''2021-12-31 13:35:18 INFO: No task queued
+''2021-12-31 13:35:38 INFO: No task queued
+''2021-12-31 13:35:58 INFO: No task queued
+''2021-12-31 13:36:18 INFO: No task queued
+''2021-12-31 13:36:38 INFO: No task queued
+''2021-12-31 13:36:58 INFO: No task queued
+''2021-12-31 13:37:18 INFO: No task queued
+''2021-12-31 13:37:38 INFO: No task queued
+''2021-12-31 13:37:58 INFO: No task queued
+''2021-12-31 13:38:18 INFO: No task queued
+''2021-12-31 13:38:38 INFO: No task queued
+''2021-12-31 13:38:58 INFO: No task queued
+''2021-12-31 13:39:18 INFO: No task queued
+''2021-12-31 13:39:38 INFO: No task queued
+''2021-12-31 13:39:58 INFO: No task queued
+''2021-12-31 13:40:18 INFO: No task queued
+''2021-12-31 13:40:38 INFO: No task queued
+''2021-12-31 13:40:58 INFO: No task queued
+''2021-12-31 13:41:18 INFO: No task queued
+''2021-12-31 13:41:38 INFO: No task queued
+''2021-12-31 13:41:58 INFO: No task queued
+''2021-12-31 13:42:18 INFO: No task queued
+''2021-12-31 13:42:38 INFO: No task queued
+''2021-12-31 13:42:58 INFO: No task queued
+''2021-12-31 13:43:18 INFO: No task queued
+''2021-12-31 13:43:38 INFO: No task queued
+''2021-12-31 13:43:58 INFO: No task queued
+''2021-12-31 13:44:18 INFO: No task queued
+''2021-12-31 13:44:38 INFO: No task queued
+''2021-12-31 13:44:58 INFO: No task queued
+''2021-12-31 13:45:19 INFO: No task queued
+''2021-12-31 13:45:38 INFO: No task queued
+''2021-12-31 13:45:58 INFO: No task queued
+''2021-12-31 13:46:18 INFO: No task queued
+''2021-12-31 13:46:38 INFO: No task queued
+''2021-12-31 13:46:58 INFO: No task queued
+''2021-12-31 13:47:18 INFO: No task queued
+''2021-12-31 13:47:38 INFO: No task queued
+''2021-12-31 13:47:58 INFO: No task queued
+''2021-12-31 13:48:18 INFO: No task queued
+''2021-12-31 13:48:38 INFO: No task queued
+''2021-12-31 13:48:58 INFO: No task queued
+''2021-12-31 13:49:18 INFO: No task queued
+''2021-12-31 13:49:38 INFO: No task queued
+''2021-12-31 13:49:58 INFO: No task queued
+''2021-12-31 13:50:18 INFO: No task queued
+''2021-12-31 13:50:38 INFO: No task queued
+''2021-12-31 13:50:58 INFO: No task queued
+''2021-12-31 13:51:18 INFO: No task queued
+''2021-12-31 13:51:38 INFO: No task queued
+''2021-12-31 13:51:58 INFO: No task queued
+''2021-12-31 13:52:18 INFO: No task queued
+''2021-12-31 13:52:38 INFO: No task queued
+''2021-12-31 13:52:58 INFO: No task queued
+''2021-12-31 13:53:18 INFO: No task queued
+''2021-12-31 13:53:38 INFO: No task queued
+''2021-12-31 13:53:58 INFO: No task queued
+''2021-12-31 13:54:18 INFO: No task queued
+''2021-12-31 13:54:38 INFO: No task queued
+''2021-12-31 13:54:59 INFO: No task queued
+''2021-12-31 13:55:21 INFO: No task queued
+''2021-12-31 13:55:40 INFO: No task queued
+''2021-12-31 13:56:00 INFO: No task queued
+''2021-12-31 13:56:23 INFO: No task queued
+''2021-12-31 13:56:41 INFO: No task queued
+''2021-12-31 13:56:58 INFO: No task queued
+''2021-12-31 13:57:18 INFO: No task queued
+''2021-12-31 13:57:38 INFO: No task queued
+''2021-12-31 13:57:58 INFO: No task queued
+''2021-12-31 13:58:18 INFO: No task queued
+''2021-12-31 13:58:38 INFO: No task queued
+''2021-12-31 13:58:59 INFO: No task queued
+''2021-12-31 13:59:18 INFO: No task queued
+''2021-12-31 13:59:38 INFO: No task queued
+''2021-12-31 13:59:58 INFO: No task queued
+''2021-12-31 14:00:18 INFO: No task queued
+''2021-12-31 14:00:38 INFO: No task queued
+''2021-12-31 14:01:00 INFO: No task queued
+''2021-12-31 14:01:18 INFO: No task queued
+''2021-12-31 14:01:38 INFO: No task queued
+''2021-12-31 14:01:58 INFO: No task queued
+''2021-12-31 14:02:18 INFO: No task queued
+''2021-12-31 14:02:39 INFO: No task queued
+''2021-12-31 14:02:58 INFO: No task queued
+''2021-12-31 14:03:18 INFO: No task queued
+''2021-12-31 14:03:38 INFO: No task queued
+''2021-12-31 14:03:58 INFO: No task queued
+''2021-12-31 14:04:18 INFO: No task queued
+''2021-12-31 14:04:38 INFO: Executing task: get_generated_files
+''2021-12-31 14:04:42 INFO: Set status of task get_generated_files to running
+''2021-12-31 14:04:46 INFO: File 33_GENERATE_ETL.zip downloaded successfully in folder /home/agent/generated_files
+''2021-12-31 14:04:46 INFO: file successfully downloaded.
+''2021-12-31 14:04:48 INFO: Set status of task get_generated_files to done
+''2021-12-31 14:04:58 INFO: No task queued
+''2021-12-31 14:05:18 INFO: Executing task: auto_deploy
+''2021-12-31 14:05:22 INFO: Set status of task auto_deploy to running
+''2021-12-31 14:05:30 INFO: 1/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_addresses_curr_curr.sql
+''2021-12-31 14:05:30 INFO: 2/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_addresses_enddt_end_date.sql
+''2021-12-31 14:05:30 INFO: 3/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_campaigns_curr_curr.sql
+''2021-12-31 14:05:30 INFO: 4/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_campaigns_enddt_end_date.sql
+''2021-12-31 14:05:30 INFO: 5/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_channels_curr_curr.sql
+''2021-12-31 14:05:30 INFO: 6/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_channels_enddt_end_date.sql
+''2021-12-31 14:05:30 INFO: 7/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_contacts_curr_curr.sql
+''2021-12-31 14:05:30 INFO: 8/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_contacts_enddt_end_date.sql
+''2021-12-31 14:05:31 INFO: 9/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_customers_curr_curr.sql
+''2021-12-31 14:05:31 INFO: 10/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_customers_enddt_end_date.sql
+''2021-12-31 14:05:31 INFO: 11/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_e_mails_curr_curr.sql
+''2021-12-31 14:05:31 INFO: 12/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_e_mails_enddt_end_date.sql
+''2021-12-31 14:05:31 INFO: 13/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_phones_curr_curr.sql
+''2021-12-31 14:05:31 INFO: 14/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_phones_enddt_end_date.sql
+''2021-12-31 14:05:31 INFO: 15/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_products_curr_curr.sql
+''2021-12-31 14:05:31 INFO: 16/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_mktg_products_enddt_end_date.sql
+''2021-12-31 14:05:31 INFO: 17/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_addresses_curr_curr.sql
+''2021-12-31 14:05:31 INFO: 18/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_addresses_enddt_end_date.sql
+''2021-12-31 14:05:31 INFO: 19/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_customers_birth_curr_curr.sql
+''2021-12-31 14:05:31 INFO: 20/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_customers_birth_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 21/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_customers_name_curr_curr.sql
+''2021-12-31 14:05:35 INFO: 22/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_customers_name_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 23/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_invoices_curr_curr.sql
+''2021-12-31 14:05:35 INFO: 24/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_invoices_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 25/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_parts_curr_curr.sql
+''2021-12-31 14:05:35 INFO: 26/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_parts_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 27/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_product_feature_cat_curr_curr.sql
+''2021-12-31 14:05:35 INFO: 28/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_product_feature_cat_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 29/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_product_feature_class_curr_curr.sql
+''2021-12-31 14:05:35 INFO: 30/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_product_feature_class_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 31/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_product_features_curr_curr.sql
+''2021-12-31 14:05:35 INFO: 32/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_product_features_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 33/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_products_curr_curr.sql
+''2021-12-31 14:05:35 INFO: 34/388 Deploying ALL/BUSINESS_VAULT_LAYER/316_001_bv_etl_sat_sales_products_enddt_end_date.sql
+''2021-12-31 14:05:35 INFO: 35/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_addresses_business_view.sql
+''2021-12-31 14:05:35 INFO: 36/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_campaigns_business_view.sql
+''2021-12-31 14:05:35 INFO: 37/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_channels_business_view.sql
+''2021-12-31 14:05:35 INFO: 38/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_contacts_business_view.sql
+''2021-12-31 14:05:35 INFO: 39/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_customers_business_view.sql
+''2021-12-31 14:05:35 INFO: 40/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_invoices_business_view.sql
+''2021-12-31 14:05:39 INFO: No task queued
+''2021-12-31 14:05:40 INFO: 41/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_parts_business_view.sql
+''2021-12-31 14:05:40 INFO: 42/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_product_feature_cat_business_view.sql
+''2021-12-31 14:05:40 INFO: 43/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_product_feature_class_business_view.sql
+''2021-12-31 14:05:40 INFO: 44/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_product_features_business_view.sql
+''2021-12-31 14:05:40 INFO: 45/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_hub_products_business_view.sql
+''2021-12-31 14:05:40 INFO: 46/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_mktg_camp_moto_chan_region_business_view.sql
+''2021-12-31 14:05:40 INFO: 47/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_mktg_camp_moto_channel_business_view.sql
+''2021-12-31 14:05:40 INFO: 48/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_mktg_camp_part_cont_business_view.sql
+''2021-12-31 14:05:40 INFO: 49/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_mktg_campaign_motorcycles_class_business_view.sql
+''2021-12-31 14:05:40 INFO: 50/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_mktg_campaign_motorcycles_emo_business_view.sql
+''2021-12-31 14:05:40 INFO: 51/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_mktg_party_contacts_business_view.sql
+''2021-12-31 14:05:40 INFO: 52/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_sales_cust_addresses_business_view.sql
+''2021-12-31 14:05:40 INFO: 53/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_sales_invoice_lines_business_view.sql
+''2021-12-31 14:05:40 INFO: 54/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lds_sales_product_feat_class_rel_business_view.sql
+''2021-12-31 14:05:40 INFO: 55/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lks_mktg_customers_addresses_business_view.sql
+''2021-12-31 14:05:40 INFO: 56/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lks_mktg_customers_customers_parent_business_view.sql
+''2021-12-31 14:05:40 INFO: 57/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lks_sales_customers_addresses_ciai_business_view.sql
+''2021-12-31 14:05:40 INFO: 58/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lks_sales_customers_addresses_csai_business_view.sql
+''2021-12-31 14:05:40 INFO: 59/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lks_sales_invoices_customers_business_view.sql
+''2021-12-31 14:05:40 INFO: 60/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lks_sales_productfeatures_productfeaturecat_business_view.sql
+''2021-12-31 14:05:44 INFO: 61/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lks_sales_products_products_rpid_business_view.sql
+''2021-12-31 14:05:44 INFO: 62/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_camp_moto_chan_region_business_view.sql
+''2021-12-31 14:05:44 INFO: 63/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_camp_moto_channel_business_view.sql
+''2021-12-31 14:05:44 INFO: 64/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_camp_part_cont_business_view.sql
+''2021-12-31 14:05:44 INFO: 65/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_campaign_motorcycles_business_view.sql
+''2021-12-31 14:05:44 INFO: 66/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_cust_addresses_business_view.sql
+''2021-12-31 14:05:44 INFO: 67/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_invoice_lines_business_view.sql
+''2021-12-31 14:05:44 INFO: 68/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_party_contacts_business_view.sql
+''2021-12-31 14:05:44 INFO: 69/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnd_product_feat_class_rel_business_view.sql
+''2021-12-31 14:05:44 INFO: 70/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnk_customers_addresses_business_view.sql
+''2021-12-31 14:05:44 INFO: 71/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnk_customers_addresses_ciai_business_view.sql
+''2021-12-31 14:05:44 INFO: 72/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnk_customers_addresses_csai_business_view.sql
+''2021-12-31 14:05:44 INFO: 73/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnk_customers_customers_parent_business_view.sql
+''2021-12-31 14:05:44 INFO: 74/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnk_invoices_customers_business_view.sql
+''2021-12-31 14:05:44 INFO: 75/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnk_productfeatures_productfeaturecat_business_view.sql
+''2021-12-31 14:05:44 INFO: 76/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_lnk_products_products_rpid_business_view.sql
+''2021-12-31 14:05:44 INFO: 77/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_nhl_sales_payments_business_view.sql
+''2021-12-31 14:05:44 INFO: 78/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_ref_sales_codes_to_language_business_view.sql
+''2021-12-31 14:05:44 INFO: 79/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_addresses_business_view.sql
+''2021-12-31 14:05:44 INFO: 80/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_campaigns_business_view.sql
+''2021-12-31 14:05:48 INFO: 81/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_channels_business_view.sql
+''2021-12-31 14:05:48 INFO: 82/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_contacts_business_view.sql
+''2021-12-31 14:05:48 INFO: 83/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_customers_business_view.sql
+''2021-12-31 14:05:48 INFO: 84/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_e_mails_business_view.sql
+''2021-12-31 14:05:48 INFO: 85/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_phones_business_view.sql
+''2021-12-31 14:05:48 INFO: 86/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_mktg_products_business_view.sql
+''2021-12-31 14:05:48 INFO: 87/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_addresses_business_view.sql
+''2021-12-31 14:05:48 INFO: 88/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_customers_birth_business_view.sql
+''2021-12-31 14:05:48 INFO: 89/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_customers_name_business_view.sql
+''2021-12-31 14:05:48 INFO: 90/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_invoices_business_view.sql
+''2021-12-31 14:05:48 INFO: 91/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_parts_business_view.sql
+''2021-12-31 14:05:48 INFO: 92/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_product_feature_cat_business_view.sql
+''2021-12-31 14:05:48 INFO: 93/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_product_feature_class_business_view.sql
+''2021-12-31 14:05:48 INFO: 94/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_product_features_business_view.sql
+''2021-12-31 14:05:48 INFO: 95/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_sat_sales_products_business_view.sql
+''2021-12-31 14:05:48 INFO: 96/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_view_pit_daily_snapshot_addresses_snapshotdates_ssd_view.sql
+''2021-12-31 14:05:48 INFO: 97/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_view_pit_daily_snapshot_customers_snapshotdates_ssd_view.sql
+''2021-12-31 14:05:48 INFO: 98/388 Deploying DDL/BUSINESS_VAULT_LAYER/316_001_bv_view_pit_daily_snapshot_products_snapshotdates_ssd_view.sql
+''2021-12-31 14:05:48 INFO: 99/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_addresses_tdfv_incr.sql
+''2021-12-31 14:05:48 INFO: 100/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_campaignmotorcycles_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 101/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_campaigns_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 102/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_campmotochannel_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 103/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_campmotochanregion_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 104/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_camppartcont_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 105/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_channels_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 106/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_contacts_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 107/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_emails_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 108/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_motorcycles_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 109/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_party_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 110/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_partycontacts_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 111/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_mktg_phones_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 112/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_addresses_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 113/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_codestolanguage_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 114/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_custaddresses_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 115/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_customers_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 116/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_invoicelines_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 117/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_invoices_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 118/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_parts_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 119/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_payments_tdfv_incr.sql
+''2021-12-31 14:05:52 INFO: 120/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_productfeatclassrel_tdfv_incr.sql
+''2021-12-31 14:05:57 INFO: 121/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_productfeaturecat_tdfv_incr.sql
+''2021-12-31 14:05:57 INFO: 122/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_productfeatureclass_tdfv_incr.sql
+''2021-12-31 14:05:57 INFO: 123/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_productfeatures_tdfv_incr.sql
+''2021-12-31 14:05:57 INFO: 124/388 Deploying DDL/DELTA_FIREWALL_LAYER/308_003_src_sales_products_tdfv_incr.sql
+''2021-12-31 14:05:57 INFO: 125/388 Deploying INCR/BUSINESS_VAULT_LAYER/316_001_bv_pit_daily_snapshot_addresses_pit_incr.sql
+''2021-12-31 14:05:57 INFO: 126/388 Deploying INCR/BUSINESS_VAULT_LAYER/316_001_bv_pit_daily_snapshot_customers_pit_incr.sql
+''2021-12-31 14:05:57 INFO: 127/388 Deploying INCR/BUSINESS_VAULT_LAYER/316_001_bv_pit_daily_snapshot_products_pit_incr.sql
+''2021-12-31 14:05:57 INFO: 128/388 Deploying INCR/BUSINESS_VAULT_LAYER/316_001_las_mktg_customers_addresses_incr.sql
+''2021-12-31 14:05:57 INFO: 129/388 Deploying INCR/BUSINESS_VAULT_LAYER/316_001_lna_mktg_customers_addresses_incr.sql
+''2021-12-31 14:05:57 INFO: 130/388 Deploying INCR/BUSINESS_VAULT_LAYER/316_002_bv_bridge_cust_part_pro_fea_bridge_incr.sql
+''2021-12-31 14:05:57 INFO: 131/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_addresses_incr.sql
+''2021-12-31 14:05:57 INFO: 132/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_campaignmotorcycles_incr.sql
+''2021-12-31 14:05:57 INFO: 133/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_campaigns_incr.sql
+''2021-12-31 14:05:57 INFO: 134/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_campmotochannel_incr.sql
+''2021-12-31 14:05:57 INFO: 135/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_campmotochanregion_incr.sql
+''2021-12-31 14:05:57 INFO: 136/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_camppartcont_incr.sql
+''2021-12-31 14:05:57 INFO: 137/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_channels_incr.sql
+''2021-12-31 14:05:57 INFO: 138/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_contacts_incr.sql
+''2021-12-31 14:05:57 INFO: 139/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_emails_incr.sql
+''2021-12-31 14:05:57 INFO: 140/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_motorcycles_incr.sql
+''2021-12-31 14:06:00 INFO: No task queued
+''2021-12-31 14:06:02 INFO: 141/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_party_incr.sql
+''2021-12-31 14:06:02 INFO: 142/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_partycontacts_incr.sql
+''2021-12-31 14:06:02 INFO: 143/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_mktg_phones_incr.sql
+''2021-12-31 14:06:02 INFO: 144/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_addresses_incr.sql
+''2021-12-31 14:06:02 INFO: 145/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_custaddresses_incr.sql
+''2021-12-31 14:06:02 INFO: 146/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_customers_incr.sql
+''2021-12-31 14:06:02 INFO: 147/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_invoicelines_incr.sql
+''2021-12-31 14:06:02 INFO: 148/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_invoices_incr.sql
+''2021-12-31 14:06:02 INFO: 149/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_parts_incr.sql
+''2021-12-31 14:06:02 INFO: 150/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_payments_incr.sql
+''2021-12-31 14:06:02 INFO: 151/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_productfeatclassrel_incr.sql
+''2021-12-31 14:06:02 INFO: 152/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_productfeaturecat_incr.sql
+''2021-12-31 14:06:02 INFO: 153/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_productfeatureclass_incr.sql
+''2021-12-31 14:06:02 INFO: 154/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_productfeatures_incr.sql
+''2021-12-31 14:06:02 INFO: 155/388 Deploying INCR/EXTRACTION_LAYER/310_001_ext_sales_products_incr.sql
+''2021-12-31 14:06:02 INFO: 156/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_mktg_addresses_incr.sql
+''2021-12-31 14:06:02 INFO: 157/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_mktg_campaigns_incr.sql
+''2021-12-31 14:06:02 INFO: 158/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_mktg_channels_incr.sql
+''2021-12-31 14:06:02 INFO: 159/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_mktg_contacts_incr.sql
+''2021-12-31 14:06:02 INFO: 160/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_mktg_customers_incr.sql
+''2021-12-31 14:06:06 INFO: 161/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_mktg_products_incr.sql
+''2021-12-31 14:06:06 INFO: 162/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_addresses_incr.sql
+''2021-12-31 14:06:06 INFO: 163/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_customers_incr.sql
+''2021-12-31 14:06:06 INFO: 164/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_invoices_incr.sql
+''2021-12-31 14:06:06 INFO: 165/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_parts_incr.sql
+''2021-12-31 14:06:06 INFO: 166/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_productfeaturecat_incr.sql
+''2021-12-31 14:06:06 INFO: 167/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_productfeatureclass_incr.sql
+''2021-12-31 14:06:06 INFO: 168/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_productfeatures_incr.sql
+''2021-12-31 14:06:06 INFO: 169/388 Deploying INCR/FOUNDATION_LAYER/314_001_hub_sales_products_incr.sql
+''2021-12-31 14:06:06 INFO: 170/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_mktg_campaignmotorcycles_class_incr.sql
+''2021-12-31 14:06:06 INFO: 171/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_mktg_campaignmotorcycles_emo_incr.sql
+''2021-12-31 14:06:06 INFO: 172/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_mktg_campmotochannel_incr.sql
+''2021-12-31 14:06:06 INFO: 173/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_mktg_campmotochanregion_incr.sql
+''2021-12-31 14:06:06 INFO: 174/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_mktg_camppartcont_incr.sql
+''2021-12-31 14:06:06 INFO: 175/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_mktg_partycontacts_incr.sql
+''2021-12-31 14:06:06 INFO: 176/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_sales_custaddresses_incr.sql
+''2021-12-31 14:06:06 INFO: 177/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_sales_invoicelines_incr.sql
+''2021-12-31 14:06:06 INFO: 178/388 Deploying INCR/FOUNDATION_LAYER/314_001_lds_sales_productfeatclassrel_incr.sql
+''2021-12-31 14:06:06 INFO: 179/388 Deploying INCR/FOUNDATION_LAYER/314_001_lks_mktg_customers_addresses_incr.sql
+''2021-12-31 14:06:06 INFO: 180/388 Deploying INCR/FOUNDATION_LAYER/314_001_lks_mktg_customers_customers_parent_incr.sql
+''2021-12-31 14:06:10 INFO: 181/388 Deploying INCR/FOUNDATION_LAYER/314_001_lks_sales_customers_addresses_ciai_incr.sql
+''2021-12-31 14:06:10 INFO: 182/388 Deploying INCR/FOUNDATION_LAYER/314_001_lks_sales_customers_addresses_csai_incr.sql
+''2021-12-31 14:06:10 INFO: 183/388 Deploying INCR/FOUNDATION_LAYER/314_001_lks_sales_invoices_customers_incr.sql
+''2021-12-31 14:06:10 INFO: 184/388 Deploying INCR/FOUNDATION_LAYER/314_001_lks_sales_productfeatures_productfeaturecat_incr.sql
+''2021-12-31 14:06:10 INFO: 185/388 Deploying INCR/FOUNDATION_LAYER/314_001_lks_sales_products_products_rpid_incr.sql
+''2021-12-31 14:06:10 INFO: 186/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_mktg_campaignmotorcycles_incr.sql
+''2021-12-31 14:06:10 INFO: 187/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_mktg_campmotochannel_incr.sql
+''2021-12-31 14:06:10 INFO: 188/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_mktg_campmotochanregion_incr.sql
+''2021-12-31 14:06:10 INFO: 189/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_mktg_camppartcont_incr.sql
+''2021-12-31 14:06:10 INFO: 190/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_mktg_partycontacts_incr.sql
+''2021-12-31 14:06:10 INFO: 191/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_sales_custaddresses_incr.sql
+''2021-12-31 14:06:10 INFO: 192/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_sales_invoicelines_incr.sql
+''2021-12-31 14:06:10 INFO: 193/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnd_sales_productfeatclassrel_incr.sql
+''2021-12-31 14:06:10 INFO: 194/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnk_mktg_customers_addresses_incr.sql
+''2021-12-31 14:06:10 INFO: 195/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnk_mktg_customers_customers_parent_incr.sql
+''2021-12-31 14:06:10 INFO: 196/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnk_sales_customers_addresses_ciai_incr.sql
+''2021-12-31 14:06:10 INFO: 197/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnk_sales_customers_addresses_csai_incr.sql
+''2021-12-31 14:06:10 INFO: 198/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnk_sales_invoices_customers_incr.sql
+''2021-12-31 14:06:10 INFO: 199/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnk_sales_productfeatures_productfeaturecat_incr.sql
+''2021-12-31 14:06:10 INFO: 200/388 Deploying INCR/FOUNDATION_LAYER/314_001_lnk_sales_products_products_rpid_incr.sql
+''2021-12-31 14:06:14 INFO: 201/388 Deploying INCR/FOUNDATION_LAYER/314_001_nhl_sales_payments_incr.sql
+''2021-12-31 14:06:14 INFO: 202/388 Deploying INCR/FOUNDATION_LAYER/314_001_ref_sales_codestolanguage_incr.sql
+''2021-12-31 14:06:14 INFO: 203/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_addresses_incr.sql
+''2021-12-31 14:06:14 INFO: 204/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_campaigns_incr.sql
+''2021-12-31 14:06:14 INFO: 205/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_channels_incr.sql
+''2021-12-31 14:06:14 INFO: 206/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_contacts_incr.sql
+''2021-12-31 14:06:14 INFO: 207/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_customers_incr.sql
+''2021-12-31 14:06:14 INFO: 208/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_emails_incr.sql
+''2021-12-31 14:06:14 INFO: 209/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_phones_incr.sql
+''2021-12-31 14:06:14 INFO: 210/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_mktg_products_incr.sql
+''2021-12-31 14:06:14 INFO: 211/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_addresses_incr.sql
+''2021-12-31 14:06:14 INFO: 212/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_customers_birth_incr.sql
+''2021-12-31 14:06:14 INFO: 213/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_customers_name_incr.sql
+''2021-12-31 14:06:14 INFO: 214/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_invoices_incr.sql
+''2021-12-31 14:06:14 INFO: 215/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_parts_incr.sql
+''2021-12-31 14:06:14 INFO: 216/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_productfeaturecat_incr.sql
+''2021-12-31 14:06:14 INFO: 217/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_productfeatureclass_incr.sql
+''2021-12-31 14:06:14 INFO: 218/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_productfeatures_incr.sql
+''2021-12-31 14:06:14 INFO: 219/388 Deploying INCR/FOUNDATION_LAYER/314_001_sat_sales_products_incr.sql
+''2021-12-31 14:06:14 INFO: 220/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_mktg_campaignmotorcycles_incr.sql
+''2021-12-31 14:06:19 INFO: No task queued
+''2021-12-31 14:06:20 INFO: 221/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_mktg_campmotochannel_incr.sql
+''2021-12-31 14:06:20 INFO: 222/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_mktg_campmotochanregion_incr.sql
+''2021-12-31 14:06:20 INFO: 223/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_mktg_camppartcont_incr.sql
+''2021-12-31 14:06:20 INFO: 224/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_mktg_partycontacts_incr.sql
+''2021-12-31 14:06:20 INFO: 225/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_sales_custaddresses_incr.sql
+''2021-12-31 14:06:20 INFO: 226/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_sales_invoicelines_incr.sql
+''2021-12-31 14:06:20 INFO: 227/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_sales_payments_incr.sql
+''2021-12-31 14:06:20 INFO: 228/388 Deploying INCR/STAGING_LAYER/312_001_stg_dl_sales_productfeatclassrel_incr.sql
+''2021-12-31 14:06:20 INFO: 229/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_addresses_incr.sql
+''2021-12-31 14:06:20 INFO: 230/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_campaigns_incr.sql
+''2021-12-31 14:06:20 INFO: 231/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_channels_incr.sql
+''2021-12-31 14:06:20 INFO: 232/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_contacts_incr.sql
+''2021-12-31 14:06:20 INFO: 233/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_emails_incr.sql
+''2021-12-31 14:06:20 INFO: 234/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_motorcycles_incr.sql
+''2021-12-31 14:06:20 INFO: 235/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_party_incr.sql
+''2021-12-31 14:06:20 INFO: 236/388 Deploying INCR/STAGING_LAYER/312_001_stg_mktg_phones_incr.sql
+''2021-12-31 14:06:20 INFO: 237/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_addresses_incr.sql
+''2021-12-31 14:06:20 INFO: 238/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_customers_incr.sql
+''2021-12-31 14:06:20 INFO: 239/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_invoices_incr.sql
+''2021-12-31 14:06:20 INFO: 240/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_parts_incr.sql
+''2021-12-31 14:06:24 INFO: 241/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_productfeaturecat_incr.sql
+''2021-12-31 14:06:24 INFO: 242/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_productfeatureclass_incr.sql
+''2021-12-31 14:06:24 INFO: 243/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_productfeatures_incr.sql
+''2021-12-31 14:06:24 INFO: 244/388 Deploying INCR/STAGING_LAYER/312_001_stg_sales_products_incr.sql
+''2021-12-31 14:06:24 INFO: 245/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_mktg_campaignmotorcycles_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 246/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_mktg_campmotochannel_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 247/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_mktg_campmotochanregion_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 248/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_mktg_camppartcont_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 249/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_mktg_partycontacts_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 250/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_sales_custaddresses_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 251/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_sales_invoicelines_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 252/388 Deploying INCR/STAGING_LAYER/312_002_stg_dl_sales_productfeatclassrel_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 253/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_addresses_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 254/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_campaigns_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 255/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_channels_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 256/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_contacts_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 257/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_emails_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 258/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_motorcycles_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 259/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_party_prep_delete.sql
+''2021-12-31 14:06:24 INFO: 260/388 Deploying INCR/STAGING_LAYER/312_002_stg_mktg_phones_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 261/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_addresses_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 262/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_customers_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 263/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_invoices_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 264/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_parts_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 265/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_productfeaturecat_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 266/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_productfeatureclass_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 267/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_productfeatures_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 268/388 Deploying INCR/STAGING_LAYER/312_002_stg_sales_products_prep_delete.sql
+''2021-12-31 14:06:28 INFO: 269/388 Deploying INIT/BUSINESS_VAULT_LAYER/316_001_bv_pit_daily_snapshot_addresses_pit_init.sql
+''2021-12-31 14:06:28 INFO: 270/388 Deploying INIT/BUSINESS_VAULT_LAYER/316_001_bv_pit_daily_snapshot_customers_pit_init.sql
+''2021-12-31 14:06:28 INFO: 271/388 Deploying INIT/BUSINESS_VAULT_LAYER/316_001_bv_pit_daily_snapshot_products_pit_init.sql
+''2021-12-31 14:06:28 INFO: 272/388 Deploying INIT/BUSINESS_VAULT_LAYER/316_001_las_mktg_customers_addresses_init.sql
+''2021-12-31 14:06:28 INFO: 273/388 Deploying INIT/BUSINESS_VAULT_LAYER/316_001_lna_mktg_customers_addresses_init.sql
+''2021-12-31 14:06:28 INFO: 274/388 Deploying INIT/BUSINESS_VAULT_LAYER/316_002_bv_bridge_cust_part_pro_fea_bridge_init.sql
+''2021-12-31 14:06:28 INFO: 275/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_addresses_init.sql
+''2021-12-31 14:06:28 INFO: 276/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_campaignmotorcycles_init.sql
+''2021-12-31 14:06:28 INFO: 277/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_campaigns_init.sql
+''2021-12-31 14:06:28 INFO: 278/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_campmotochannel_init.sql
+''2021-12-31 14:06:28 INFO: 279/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_campmotochanregion_init.sql
+''2021-12-31 14:06:28 INFO: 280/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_camppartcont_init.sql
+''2021-12-31 14:06:32 INFO: 281/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_channels_init.sql
+''2021-12-31 14:06:32 INFO: 282/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_contacts_init.sql
+''2021-12-31 14:06:32 INFO: 283/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_emails_init.sql
+''2021-12-31 14:06:32 INFO: 284/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_motorcycles_init.sql
+''2021-12-31 14:06:32 INFO: 285/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_party_init.sql
+''2021-12-31 14:06:32 INFO: 286/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_partycontacts_init.sql
+''2021-12-31 14:06:32 INFO: 287/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_mktg_phones_init.sql
+''2021-12-31 14:06:32 INFO: 288/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_addresses_init.sql
+''2021-12-31 14:06:32 INFO: 289/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_custaddresses_init.sql
+''2021-12-31 14:06:32 INFO: 290/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_customers_init.sql
+''2021-12-31 14:06:32 INFO: 291/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_invoicelines_init.sql
+''2021-12-31 14:06:32 INFO: 292/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_invoices_init.sql
+''2021-12-31 14:06:32 INFO: 293/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_parts_init.sql
+''2021-12-31 14:06:32 INFO: 294/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_payments_init.sql
+''2021-12-31 14:06:32 INFO: 295/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_productfeatclassrel_init.sql
+''2021-12-31 14:06:32 INFO: 296/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_productfeaturecat_init.sql
+''2021-12-31 14:06:32 INFO: 297/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_productfeatureclass_init.sql
+''2021-12-31 14:06:32 INFO: 298/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_productfeatures_init.sql
+''2021-12-31 14:06:32 INFO: 299/388 Deploying INIT/EXTRACTION_LAYER/310_001_ext_sales_products_init.sql
+''2021-12-31 14:06:32 INFO: 300/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_mktg_addresses_init.sql
+''2021-12-31 14:06:37 INFO: 301/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_mktg_campaigns_init.sql
+''2021-12-31 14:06:37 INFO: 302/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_mktg_channels_init.sql
+''2021-12-31 14:06:37 INFO: 303/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_mktg_contacts_init.sql
+''2021-12-31 14:06:37 INFO: 304/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_mktg_customers_init.sql
+''2021-12-31 14:06:37 INFO: 305/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_mktg_products_init.sql
+''2021-12-31 14:06:37 INFO: 306/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_addresses_init.sql
+''2021-12-31 14:06:37 INFO: 307/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_customers_init.sql
+''2021-12-31 14:06:37 INFO: 308/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_invoices_init.sql
+''2021-12-31 14:06:37 INFO: 309/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_parts_init.sql
+''2021-12-31 14:06:37 INFO: 310/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_productfeaturecat_init.sql
+''2021-12-31 14:06:37 INFO: 311/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_productfeatureclass_init.sql
+''2021-12-31 14:06:37 INFO: 312/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_productfeatures_init.sql
+''2021-12-31 14:06:37 INFO: 313/388 Deploying INIT/FOUNDATION_LAYER/314_001_hub_sales_products_init.sql
+''2021-12-31 14:06:37 INFO: 314/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_mktg_campaignmotorcycles_class_init.sql
+''2021-12-31 14:06:37 INFO: 315/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_mktg_campaignmotorcycles_emo_init.sql
+''2021-12-31 14:06:37 INFO: 316/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_mktg_campmotochannel_init.sql
+''2021-12-31 14:06:37 INFO: 317/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_mktg_campmotochanregion_init.sql
+''2021-12-31 14:06:37 INFO: 318/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_mktg_camppartcont_init.sql
+''2021-12-31 14:06:37 INFO: 319/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_mktg_partycontacts_init.sql
+''2021-12-31 14:06:37 INFO: 320/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_sales_custaddresses_init.sql
+''2021-12-31 14:06:41 INFO: 321/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_sales_invoicelines_init.sql
+''2021-12-31 14:06:41 INFO: 322/388 Deploying INIT/FOUNDATION_LAYER/314_001_lds_sales_productfeatclassrel_init.sql
+''2021-12-31 14:06:41 INFO: 323/388 Deploying INIT/FOUNDATION_LAYER/314_001_lks_mktg_customers_addresses_init.sql
+''2021-12-31 14:06:41 INFO: 324/388 Deploying INIT/FOUNDATION_LAYER/314_001_lks_mktg_customers_customers_parent_init.sql
+''2021-12-31 14:06:41 INFO: 325/388 Deploying INIT/FOUNDATION_LAYER/314_001_lks_sales_customers_addresses_ciai_init.sql
+''2021-12-31 14:06:41 INFO: 326/388 Deploying INIT/FOUNDATION_LAYER/314_001_lks_sales_customers_addresses_csai_init.sql
+''2021-12-31 14:06:41 INFO: 327/388 Deploying INIT/FOUNDATION_LAYER/314_001_lks_sales_invoices_customers_init.sql
+''2021-12-31 14:06:41 INFO: 328/388 Deploying INIT/FOUNDATION_LAYER/314_001_lks_sales_productfeatures_productfeaturecat_init.sql
+''2021-12-31 14:06:41 INFO: 329/388 Deploying INIT/FOUNDATION_LAYER/314_001_lks_sales_products_products_rpid_init.sql
+''2021-12-31 14:06:41 INFO: 330/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_mktg_campaignmotorcycles_init.sql
+''2021-12-31 14:06:41 INFO: 331/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_mktg_campmotochannel_init.sql
+''2021-12-31 14:06:41 INFO: 332/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_mktg_campmotochanregion_init.sql
+''2021-12-31 14:06:41 INFO: 333/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_mktg_camppartcont_init.sql
+''2021-12-31 14:06:41 INFO: 334/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_mktg_partycontacts_init.sql
+''2021-12-31 14:06:41 INFO: 335/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_sales_custaddresses_init.sql
+''2021-12-31 14:06:41 INFO: 336/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_sales_invoicelines_init.sql
+''2021-12-31 14:06:41 INFO: 337/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnd_sales_productfeatclassrel_init.sql
+''2021-12-31 14:06:41 INFO: 338/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnk_mktg_customers_addresses_init.sql
+''2021-12-31 14:06:41 INFO: 339/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnk_mktg_customers_customers_parent_init.sql
+''2021-12-31 14:06:41 INFO: 340/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnk_sales_customers_addresses_ciai_init.sql
+''2021-12-31 14:06:45 INFO: 341/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnk_sales_customers_addresses_csai_init.sql
+''2021-12-31 14:06:45 INFO: 342/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnk_sales_invoices_customers_init.sql
+''2021-12-31 14:06:45 INFO: 343/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnk_sales_productfeatures_productfeaturecat_init.sql
+''2021-12-31 14:06:45 INFO: 344/388 Deploying INIT/FOUNDATION_LAYER/314_001_lnk_sales_products_products_rpid_init.sql
+''2021-12-31 14:06:45 INFO: 345/388 Deploying INIT/FOUNDATION_LAYER/314_001_nhl_sales_payments_init.sql
+''2021-12-31 14:06:45 INFO: 346/388 Deploying INIT/FOUNDATION_LAYER/314_001_ref_sales_codestolanguage_init.sql
+''2021-12-31 14:06:45 INFO: 347/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_addresses_init.sql
+''2021-12-31 14:06:45 INFO: 348/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_campaigns_init.sql
+''2021-12-31 14:06:45 INFO: 349/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_channels_init.sql
+''2021-12-31 14:06:45 INFO: 350/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_contacts_init.sql
+''2021-12-31 14:06:45 INFO: 351/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_customers_init.sql
+''2021-12-31 14:06:45 INFO: 352/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_emails_init.sql
+''2021-12-31 14:06:45 INFO: 353/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_phones_init.sql
+''2021-12-31 14:06:45 INFO: 354/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_mktg_products_init.sql
+''2021-12-31 14:06:45 INFO: 355/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_addresses_init.sql
+''2021-12-31 14:06:45 INFO: 356/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_customers_birth_init.sql
+''2021-12-31 14:06:45 INFO: 357/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_customers_name_init.sql
+''2021-12-31 14:06:45 INFO: 358/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_invoices_init.sql
+''2021-12-31 14:06:45 INFO: 359/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_parts_init.sql
+''2021-12-31 14:06:45 INFO: 360/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_productfeaturecat_init.sql
+''2021-12-31 14:06:49 INFO: 361/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_productfeatureclass_init.sql
+''2021-12-31 14:06:49 INFO: 362/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_productfeatures_init.sql
+''2021-12-31 14:06:49 INFO: 363/388 Deploying INIT/FOUNDATION_LAYER/314_001_sat_sales_products_init.sql
+''2021-12-31 14:06:49 INFO: 364/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_mktg_campaignmotorcycles_init.sql
+''2021-12-31 14:06:49 INFO: 365/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_mktg_campmotochannel_init.sql
+''2021-12-31 14:06:49 INFO: 366/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_mktg_campmotochanregion_init.sql
+''2021-12-31 14:06:49 INFO: 367/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_mktg_camppartcont_init.sql
+''2021-12-31 14:06:49 INFO: 368/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_mktg_partycontacts_init.sql
+''2021-12-31 14:06:49 INFO: 369/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_sales_custaddresses_init.sql
+''2021-12-31 14:06:49 INFO: 370/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_sales_invoicelines_init.sql
+''2021-12-31 14:06:49 INFO: 371/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_sales_payments_init.sql
+''2021-12-31 14:06:49 INFO: 372/388 Deploying INIT/STAGING_LAYER/312_001_stg_dl_sales_productfeatclassrel_init.sql
+''2021-12-31 14:06:49 INFO: 373/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_addresses_init.sql
+''2021-12-31 14:06:49 INFO: 374/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_campaigns_init.sql
+''2021-12-31 14:06:49 INFO: 375/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_channels_init.sql
+''2021-12-31 14:06:49 INFO: 376/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_contacts_init.sql
+''2021-12-31 14:06:49 INFO: 377/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_emails_init.sql
+''2021-12-31 14:06:49 INFO: 378/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_motorcycles_init.sql
+''2021-12-31 14:06:49 INFO: 379/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_party_init.sql
+''2021-12-31 14:06:49 INFO: 380/388 Deploying INIT/STAGING_LAYER/312_001_stg_mktg_phones_init.sql
+''2021-12-31 14:06:52 INFO: 381/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_addresses_init.sql
+''2021-12-31 14:06:53 INFO: 382/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_customers_init.sql
+''2021-12-31 14:06:53 INFO: 383/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_invoices_init.sql
+''2021-12-31 14:06:53 INFO: 384/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_parts_init.sql
+''2021-12-31 14:06:53 INFO: 385/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_productfeaturecat_init.sql
+''2021-12-31 14:06:53 INFO: 386/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_productfeatureclass_init.sql
+''2021-12-31 14:06:53 INFO: 387/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_productfeatures_init.sql
+''2021-12-31 14:06:53 INFO: 388/388 Deploying INIT/STAGING_LAYER/312_001_stg_sales_products_init.sql
+''2021-12-31 14:06:53 INFO: Successfully deployed 33_GENERATE_ETL.zip
+''2021-12-31 14:06:55 INFO: Set status of task auto_deploy to done
+''2021-12-31 14:06:59 INFO: No task queued
+''2021-12-31 14:07:00 INFO: No task queued
+''2021-12-31 14:07:18 INFO: No task queued
+''2021-12-31 14:07:38 INFO: No task queued
+''2021-12-31 14:07:58 INFO: No task queued
+''2021-12-31 14:08:18 INFO: No task queued
+''2021-12-31 14:08:38 INFO: No task queued
+''2021-12-31 14:08:58 INFO: No task queued
+''2021-12-31 14:09:18 INFO: No task queued
+''2021-12-31 14:09:38 INFO: No task queued
+''2021-12-31 14:09:58 INFO: No task queued
+''2021-12-31 14:10:19 INFO: No task queued
+''2021-12-31 14:10:39 INFO: No task queued
+''2021-12-31 14:11:01 INFO: No task queued
+''2021-12-31 14:11:18 INFO: No task queued
+''2021-12-31 14:11:38 INFO: No task queued
+''2021-12-31 14:11:58 INFO: No task queued
+''2021-12-31 14:12:18 INFO: Executing task: get_generated_files
+''2021-12-31 14:12:22 INFO: Set status of task get_generated_files to running
+''2021-12-31 14:12:27 INFO: File 35_FMC.zip downloaded successfully in folder /home/agent/generated_files
+''2021-12-31 14:12:27 INFO: file successfully downloaded.
+''2021-12-31 14:12:29 INFO: Set status of task get_generated_files to done
+''2021-12-31 14:12:38 INFO: Executing task: get_generated_files
+''2021-12-31 14:12:42 INFO: Set status of task get_generated_files to running
+''2021-12-31 14:12:46 INFO: File 34_FMC.zip downloaded successfully in folder /home/agent/generated_files
+''2021-12-31 14:12:46 INFO: file successfully downloaded.
+''2021-12-31 14:12:48 INFO: Set status of task get_generated_files to done
+''2021-12-31 14:12:58 INFO: No task queued
+''2021-12-31 14:13:18 INFO: No task queued
+''2021-12-31 14:13:38 INFO: No task queued
+''2021-12-31 14:13:58 INFO: No task queued
+''2021-12-31 14:14:18 INFO: No task queued
+''2021-12-31 14:14:38 INFO: No task queued
+''2021-12-31 14:14:58 INFO: No task queued
+''2021-12-31 14:15:18 INFO: No task queued
+''2021-12-31 14:15:38 INFO: No task queued
+''2021-12-31 14:15:58 INFO: No task queued
+''2021-12-31 14:16:18 INFO: No task queued
+''2021-12-31 14:16:38 INFO: No task queued
+''2021-12-31 14:16:58 INFO: No task queued
+''2021-12-31 14:17:18 INFO: No task queued
+''2021-12-31 14:17:38 INFO: No task queued
+''2021-12-31 14:17:58 INFO: No task queued
+''2021-12-31 14:18:18 INFO: No task queued
+''2021-12-31 14:18:38 INFO: No task queued
+''2021-12-31 14:18:58 INFO: No task queued
+''2021-12-31 14:19:18 INFO: No task queued
+''2021-12-31 14:19:38 INFO: No task queued
+''2021-12-31 14:19:58 INFO: No task queued
+''2021-12-31 14:20:18 INFO: No task queued
+''2021-12-31 14:20:38 INFO: No task queued
+''2021-12-31 14:20:58 INFO: No task queued
+''2021-12-31 14:21:18 INFO: No task queued
+''2021-12-31 14:21:38 INFO: No task queued
+''2021-12-31 14:21:58 INFO: No task queued
+''2021-12-31 14:22:18 INFO: No task queued
+''2021-12-31 14:22:38 INFO: No task queued
+''2021-12-31 14:22:58 INFO: No task queued
+''2021-12-31 14:23:18 INFO: No task queued
+''2021-12-31 14:23:38 INFO: No task queued
+''2021-12-31 14:23:58 INFO: No task queued
+''2021-12-31 14:24:18 INFO: No task queued
+''2021-12-31 14:24:38 INFO: No task queued
+''2021-12-31 14:24:58 INFO: No task queued
+''2021-12-31 14:25:18 INFO: No task queued
+''2021-12-31 14:25:38 INFO: No task queued
+''2021-12-31 14:25:58 INFO: No task queued
+''2021-12-31 14:26:18 INFO: No task queued
+''2021-12-31 14:26:38 INFO: No task queued
+''2021-12-31 14:26:58 INFO: No task queued
+''2021-12-31 14:27:18 INFO: No task queued
+''2021-12-31 14:27:38 INFO: No task queued
+''2021-12-31 14:27:58 INFO: No task queued
+''2021-12-31 14:28:18 INFO: No task queued
+''2021-12-31 14:28:38 INFO: No task queued
+''2021-12-31 14:28:58 INFO: No task queued
+''2021-12-31 14:29:18 INFO: No task queued
+''2021-12-31 14:29:38 INFO: No task queued
+''2021-12-31 14:29:58 INFO: No task queued
+''2021-12-31 14:30:18 INFO: No task queued
+''2021-12-31 14:30:38 INFO: No task queued
+''2021-12-31 14:30:58 INFO: No task queued
+''2021-12-31 14:31:18 INFO: No task queued
+''2021-12-31 14:31:38 INFO: No task queued
+''2021-12-31 14:31:58 INFO: No task queued
+''2021-12-31 14:32:18 INFO: No task queued
+''2021-12-31 14:32:38 INFO: No task queued
+''2021-12-31 14:32:58 INFO: No task queued
+''2021-12-31 14:33:18 INFO: No task queued
+''2021-12-31 14:33:38 INFO: No task queued
+''2021-12-31 14:33:58 INFO: No task queued
+''2021-12-31 14:34:18 INFO: No task queued
+''2021-12-31 14:34:38 INFO: No task queued
+''2021-12-31 14:34:58 INFO: No task queued
+''2021-12-31 14:35:18 INFO: No task queued
+''2021-12-31 14:35:38 INFO: No task queued
+''2021-12-31 14:35:58 INFO: No task queued
+''2021-12-31 14:36:18 INFO: No task queued
+''2021-12-31 14:36:38 INFO: No task queued
+''2021-12-31 14:36:58 INFO: No task queued
+''2021-12-31 14:37:18 INFO: No task queued
+''2021-12-31 14:37:38 INFO: No task queued
+''2021-12-31 14:37:58 INFO: No task queued
+''2021-12-31 14:38:18 INFO: No task queued
+''2021-12-31 14:38:38 INFO: No task queued
+''2021-12-31 14:38:58 INFO: No task queued
+''2021-12-31 14:39:18 INFO: No task queued
+''2021-12-31 14:39:38 INFO: No task queued
+''2021-12-31 14:39:58 INFO: No task queued
+''2021-12-31 14:40:19 INFO: No task queued
+''2021-12-31 14:40:38 INFO: No task queued
+''2021-12-31 14:40:58 INFO: No task queued
+''2021-12-31 14:41:18 INFO: No task queued
+''2021-12-31 14:41:38 INFO: No task queued
+''2021-12-31 14:41:58 INFO: No task queued
+''2021-12-31 14:42:18 INFO: No task queued
+''2021-12-31 14:42:38 INFO: No task queued
+''2021-12-31 14:42:58 INFO: No task queued
+''2021-12-31 14:43:18 INFO: No task queued
+''2021-12-31 14:43:38 INFO: No task queued
+''2021-12-31 14:43:58 INFO: No task queued
+''2021-12-31 14:44:18 INFO: No task queued
+''2021-12-31 14:44:38 INFO: No task queued
+''2021-12-31 14:44:58 INFO: No task queued
+''2021-12-31 14:45:18 INFO: No task queued
+''2021-12-31 14:45:38 INFO: No task queued
+''2021-12-31 14:45:58 INFO: No task queued
+''2021-12-31 14:46:18 INFO: No task queued
+''2021-12-31 14:46:38 INFO: No task queued
+''2021-12-31 14:46:58 INFO: No task queued
+''2021-12-31 14:47:18 INFO: No task queued
+''2021-12-31 14:47:38 INFO: No task queued
+''2021-12-31 14:47:58 INFO: No task queued
+''2021-12-31 14:48:18 INFO: No task queued
+''2021-12-31 14:48:38 INFO: No task queued
+''2021-12-31 14:48:58 INFO: No task queued
+''2021-12-31 14:49:18 INFO: No task queued
+''2021-12-31 14:49:39 INFO: No task queued
+''2021-12-31 14:49:59 INFO: No task queued
+''2021-12-31 14:50:18 INFO: No task queued
+''2021-12-31 14:50:38 INFO: No task queued
+''2021-12-31 14:50:58 INFO: No task queued
+''2021-12-31 14:51:18 INFO: No task queued
+''2021-12-31 14:51:38 INFO: No task queued
+''2021-12-31 14:51:58 INFO: No task queued
+''2021-12-31 14:52:18 INFO: No task queued
+''2021-12-31 14:52:38 INFO: No task queued
+''2021-12-31 14:52:58 INFO: No task queued
+''2021-12-31 14:53:18 INFO: No task queued
+''2021-12-31 14:53:38 INFO: No task queued
+''2021-12-31 14:53:58 INFO: No task queued
+''2021-12-31 14:54:18 INFO: No task queued
+''2021-12-31 14:54:38 INFO: No task queued
+''2021-12-31 14:54:58 INFO: No task queued
+''2021-12-31 14:55:18 INFO: No task queued
+''2021-12-31 14:55:38 INFO: No task queued
+''2021-12-31 14:55:58 INFO: No task queued
+''2021-12-31 14:56:18 INFO: No task queued
+''2021-12-31 14:56:38 INFO: No task queued
+''2021-12-31 14:56:58 INFO: No task queued
+''2021-12-31 14:57:18 INFO: No task queued
+''2021-12-31 14:57:38 INFO: No task queued
+''2021-12-31 14:57:58 INFO: No task queued
+''2021-12-31 14:58:18 INFO: No task queued
+''2021-12-31 14:58:38 INFO: No task queued
+''2021-12-31 14:58:58 INFO: No task queued
+''2021-12-31 14:59:18 INFO: No task queued
+''2021-12-31 14:59:38 INFO: No task queued
+''2021-12-31 14:59:58 INFO: No task queued
+''2021-12-31 15:00:18 INFO: No task queued
+''2021-12-31 15:00:38 INFO: No task queued
+''2021-12-31 15:00:58 INFO: No task queued
+''2021-12-31 15:01:18 INFO: No task queued
+''2021-12-31 15:01:38 INFO: No task queued
+''2021-12-31 15:01:58 INFO: No task queued
+''2021-12-31 15:02:18 INFO: No task queued
+''2021-12-31 15:02:38 INFO: No task queued
+''2021-12-31 15:02:58 INFO: No task queued
+''2021-12-31 15:03:18 INFO: No task queued
+''2021-12-31 15:03:38 INFO: No task queued
+''2021-12-31 15:03:58 INFO: No task queued
+''2021-12-31 15:04:18 INFO: No task queued
+''2021-12-31 15:04:38 INFO: No task queued
+''2021-12-31 15:04:58 INFO: No task queued
+''2021-12-31 15:05:18 INFO: No task queued
+''2021-12-31 15:05:38 INFO: No task queued
+''2021-12-31 15:05:58 INFO: No task queued
+''2021-12-31 15:06:18 INFO: No task queued
+''2021-12-31 15:06:38 INFO: No task queued
+''2021-12-31 15:06:58 INFO: No task queued
+''2021-12-31 15:07:18 INFO: No task queued
+''2021-12-31 15:07:38 INFO: No task queued
+''2021-12-31 15:07:58 INFO: No task queued
+''2021-12-31 15:08:18 INFO: No task queued
+''2021-12-31 15:08:38 INFO: No task queued
+''2021-12-31 15:08:58 INFO: No task queued
+''2021-12-31 15:09:18 INFO: No task queued
+''2021-12-31 15:09:38 INFO: No task queued
+''2021-12-31 15:09:58 INFO: No task queued
+''2021-12-31 15:10:18 INFO: No task queued
+''2021-12-31 15:10:38 INFO: No task queued
+''2021-12-31 15:10:58 INFO: No task queued
+''2021-12-31 15:11:18 INFO: No task queued
+''2021-12-31 15:11:38 INFO: No task queued
+''2021-12-31 15:11:58 INFO: No task queued
+''2021-12-31 15:12:18 INFO: No task queued
+''2021-12-31 15:12:38 INFO: No task queued
+''2021-12-31 15:12:58 INFO: No task queued
+''2021-12-31 15:13:18 INFO: No task queued
+''2021-12-31 15:13:38 INFO: No task queued
+''2021-12-31 15:13:58 INFO: No task queued
+''2021-12-31 15:14:18 INFO: No task queued
+''2021-12-31 15:14:38 INFO: No task queued
+''2021-12-31 15:14:58 INFO: No task queued
+''2021-12-31 15:15:18 INFO: No task queued
+''2021-12-31 15:15:38 INFO: No task queued
+''2021-12-31 15:15:58 INFO: No task queued
+''2021-12-31 15:16:18 INFO: No task queued
+''2021-12-31 15:16:38 INFO: No task queued
+''2021-12-31 15:16:58 INFO: No task queued
+''2021-12-31 15:17:18 INFO: No task queued
+''2021-12-31 15:17:38 INFO: No task queued
+''2021-12-31 15:17:58 INFO: No task queued
+''2021-12-31 15:18:18 INFO: No task queued
+''2021-12-31 15:18:38 INFO: No task queued
+''2021-12-31 15:18:58 INFO: No task queued
+''2021-12-31 15:19:18 INFO: No task queued
+''2021-12-31 15:19:38 INFO: No task queued
+''2021-12-31 15:19:58 INFO: No task queued
+''2021-12-31 15:20:18 INFO: No task queued
+''2021-12-31 15:20:38 INFO: No task queued
+''2021-12-31 15:20:58 INFO: No task queued
+''2021-12-31 15:21:18 INFO: No task queued
+''2021-12-31 15:21:38 INFO: No task queued
+''2021-12-31 15:21:58 INFO: No task queued
+''2021-12-31 15:22:18 INFO: No task queued
+''2021-12-31 15:22:38 INFO: No task queued
+''2021-12-31 15:22:58 INFO: No task queued
+''2021-12-31 15:23:18 INFO: No task queued
+''2021-12-31 15:23:38 INFO: No task queued
+''2021-12-31 15:23:58 INFO: No task queued
+''2021-12-31 15:24:19 INFO: No task queued
+''2021-12-31 15:24:38 INFO: No task queued
+''2021-12-31 15:24:58 INFO: No task queued
+''2021-12-31 15:25:19 INFO: No task queued
+''2021-12-31 15:25:39 INFO: No task queued
+''2021-12-31 15:25:59 INFO: No task queued
+''2021-12-31 15:26:18 INFO: No task queued
+''2021-12-31 15:26:38 INFO: No task queued
+''2021-12-31 15:26:58 INFO: No task queued
+''2021-12-31 15:27:19 INFO: No task queued
+''2021-12-31 15:27:39 INFO: No task queued
+''2021-12-31 15:27:59 INFO: No task queued
+''2021-12-31 15:28:18 INFO: No task queued
+''2021-12-31 15:28:38 INFO: No task queued
+''2021-12-31 15:28:58 INFO: No task queued
+''2021-12-31 15:29:19 INFO: No task queued
+''2021-12-31 15:29:39 INFO: No task queued
+''2021-12-31 15:29:59 INFO: No task queued
+''2021-12-31 15:30:18 INFO: No task queued
+''2021-12-31 15:30:38 INFO: No task queued
+''2021-12-31 15:30:58 INFO: No task queued
+''2021-12-31 15:31:18 INFO: No task queued
+''2021-12-31 15:31:39 INFO: No task queued
+''2021-12-31 15:31:59 INFO: No task queued
+''2021-12-31 15:32:18 INFO: No task queued
+''2021-12-31 15:32:39 INFO: No task queued
+''2021-12-31 15:32:58 INFO: No task queued
+''2021-12-31 15:33:19 INFO: No task queued
+''2021-12-31 15:33:39 INFO: No task queued
+''2021-12-31 15:33:59 INFO: No task queued
+''2021-12-31 15:34:18 INFO: No task queued
+''2021-12-31 15:34:38 INFO: No task queued
+''2021-12-31 15:34:59 INFO: No task queued
+''2021-12-31 15:35:19 INFO: No task queued
+''2021-12-31 15:35:39 INFO: No task queued
+''2021-12-31 15:35:59 INFO: No task queued
+''2021-12-31 15:36:20 INFO: No task queued
+''2021-12-31 15:36:41 INFO: No task queued
+''2021-12-31 15:36:59 INFO: No task queued
+''2021-12-31 15:37:19 INFO: No task queued
+''2021-12-31 15:37:39 INFO: No task queued
+''2021-12-31 15:37:58 INFO: No task queued
+''2021-12-31 15:38:18 INFO: No task queued
+''2021-12-31 15:38:38 INFO: No task queued
+''2021-12-31 15:38:58 INFO: No task queued
+''2021-12-31 15:39:18 INFO: No task queued
+''2021-12-31 15:39:38 INFO: No task queued
+''2021-12-31 15:39:58 INFO: No task queued
+''2021-12-31 15:40:18 INFO: No task queued
+''2021-12-31 15:40:38 INFO: No task queued
+''2021-12-31 15:40:58 INFO: No task queued
+''2021-12-31 15:41:18 INFO: No task queued
+''2021-12-31 15:41:38 INFO: No task queued
+''2021-12-31 15:41:58 INFO: No task queued
+''2021-12-31 15:42:18 INFO: No task queued
+''2021-12-31 15:42:38 INFO: No task queued
+''2021-12-31 15:42:58 INFO: No task queued
+''2021-12-31 15:43:18 INFO: No task queued
+''2021-12-31 15:43:38 INFO: No task queued
+''2021-12-31 15:43:58 INFO: No task queued
+''2021-12-31 15:44:18 INFO: No task queued
+''2021-12-31 15:44:38 INFO: No task queued
+''2021-12-31 15:44:58 INFO: No task queued
+''2021-12-31 15:45:18 INFO: No task queued
+''2021-12-31 15:45:38 INFO: No task queued
+''2021-12-31 15:45:58 INFO: No task queued
+''2021-12-31 15:46:18 INFO: No task queued
+''2021-12-31 15:46:38 INFO: No task queued
+''2021-12-31 15:46:58 INFO: No task queued
+''2021-12-31 15:47:18 INFO: No task queued
+''2021-12-31 15:47:38 INFO: No task queued
+''2021-12-31 15:47:58 INFO: No task queued
+''2021-12-31 15:48:18 INFO: No task queued
+''2021-12-31 15:48:38 INFO: No task queued
+''2021-12-31 15:48:58 INFO: No task queued
+''2021-12-31 15:49:18 INFO: No task queued
+''2021-12-31 15:49:38 INFO: No task queued
+''2021-12-31 15:49:58 INFO: No task queued
+''2021-12-31 15:50:18 INFO: No task queued
+''2021-12-31 15:50:38 INFO: No task queued
+''2021-12-31 15:50:58 INFO: No task queued
+''2021-12-31 15:51:18 INFO: No task queued
+''2021-12-31 15:51:38 INFO: No task queued
+''2021-12-31 15:51:58 INFO: No task queued
+''2021-12-31 15:52:18 INFO: No task queued
+''2021-12-31 15:52:38 INFO: No task queued
+''2021-12-31 15:52:58 INFO: No task queued
+''2021-12-31 15:53:18 INFO: No task queued
+''2021-12-31 15:53:38 INFO: No task queued
+''2021-12-31 15:53:58 INFO: No task queued
+''2021-12-31 15:54:18 INFO: No task queued
+''2021-12-31 15:54:38 INFO: No task queued
+''2021-12-31 15:54:58 INFO: No task queued
+''2021-12-31 15:55:18 INFO: No task queued
+''2021-12-31 15:55:38 INFO: No task queued
+''2021-12-31 15:55:58 INFO: No task queued
+''2021-12-31 15:56:18 INFO: No task queued
+''2021-12-31 15:56:38 INFO: No task queued
+''2021-12-31 15:56:58 INFO: No task queued
+''2021-12-31 15:57:18 INFO: No task queued
+''2021-12-31 15:57:38 INFO: No task queued
+''2021-12-31 15:57:58 INFO: No task queued
+''2021-12-31 15:58:18 INFO: No task queued
+''2021-12-31 15:58:38 INFO: No task queued
+''2021-12-31 15:58:58 INFO: No task queued
+''2021-12-31 15:59:18 INFO: No task queued
+''2021-12-31 15:59:38 INFO: No task queued
+''2021-12-31 15:59:58 INFO: No task queued
+''2021-12-31 16:00:18 INFO: No task queued
+''2021-12-31 16:00:38 INFO: No task queued
+''2021-12-31 16:00:58 INFO: No task queued
+''2021-12-31 16:01:18 INFO: No task queued
+''2021-12-31 16:01:38 INFO: No task queued
+''2021-12-31 16:01:58 INFO: No task queued
+''2021-12-31 16:02:18 INFO: No task queued
+''2021-12-31 16:02:38 INFO: No task queued
+''2021-12-31 16:02:58 INFO: No task queued
+''2021-12-31 16:03:18 INFO: No task queued
+''2021-12-31 16:03:38 INFO: No task queued
+''2021-12-31 16:03:58 INFO: No task queued
+''2021-12-31 16:04:18 INFO: No task queued
+''2021-12-31 16:04:38 INFO: No task queued
+''2021-12-31 16:04:58 INFO: No task queued
+''2021-12-31 16:05:18 INFO: No task queued
+''2021-12-31 16:05:38 INFO: No task queued
+''2021-12-31 16:05:58 INFO: No task queued
+''2021-12-31 16:06:18 INFO: No task queued
+''2021-12-31 16:06:38 INFO: No task queued
+''2021-12-31 16:06:58 INFO: No task queued
+''2021-12-31 16:07:18 INFO: No task queued
+''2021-12-31 16:07:38 INFO: No task queued
+''2021-12-31 16:07:58 INFO: No task queued
+''2021-12-31 16:08:18 INFO: No task queued
+''2021-12-31 16:08:38 INFO: No task queued
+''2021-12-31 16:08:58 INFO: No task queued
+''2021-12-31 16:09:18 INFO: No task queued
+''2021-12-31 16:09:38 INFO: No task queued
+''2021-12-31 16:09:58 INFO: No task queued
+''2021-12-31 16:10:18 INFO: No task queued
+''2021-12-31 16:10:38 INFO: No task queued
+''2021-12-31 16:10:58 INFO: No task queued
+''2021-12-31 16:11:18 INFO: No task queued
+''2021-12-31 16:11:38 INFO: No task queued
+''2021-12-31 16:11:58 INFO: No task queued
+''2021-12-31 16:12:18 INFO: No task queued
+''2021-12-31 16:12:38 INFO: No task queued
+''2021-12-31 16:12:58 INFO: No task queued
+''2021-12-31 16:13:18 INFO: No task queued
+''2021-12-31 16:13:38 INFO: No task queued
+''2021-12-31 16:13:58 INFO: No task queued
+''2021-12-31 16:14:18 INFO: No task queued
+''2021-12-31 16:14:38 INFO: No task queued
+''2021-12-31 16:14:58 INFO: No task queued
+''2021-12-31 16:15:18 INFO: No task queued
+''2021-12-31 16:15:39 INFO: No task queued
+''2021-12-31 16:15:59 INFO: No task queued
+''2021-12-31 16:16:18 INFO: No task queued
+''2021-12-31 16:16:39 INFO: No task queued
+''2021-12-31 16:16:58 INFO: No task queued
+''2021-12-31 16:17:18 INFO: No task queued
+''2021-12-31 16:17:38 INFO: No task queued
+''2021-12-31 16:17:58 INFO: No task queued
+''2021-12-31 16:18:18 INFO: No task queued
+''2021-12-31 16:18:38 INFO: No task queued
+''2021-12-31 16:18:58 INFO: No task queued
+''2021-12-31 16:19:18 INFO: No task queued
+''2021-12-31 16:19:38 INFO: No task queued
+''2021-12-31 16:19:58 INFO: No task queued
+''2021-12-31 16:20:18 INFO: No task queued
+''2021-12-31 16:20:38 INFO: No task queued
+''2021-12-31 16:20:58 INFO: No task queued
+''2021-12-31 16:21:18 INFO: No task queued
+''2021-12-31 16:21:38 INFO: No task queued
+''2021-12-31 16:21:58 INFO: No task queued
+''2021-12-31 16:22:18 INFO: No task queued
+''2021-12-31 16:22:38 INFO: No task queued
+''2021-12-31 16:22:58 INFO: No task queued
+''2021-12-31 16:23:18 INFO: No task queued
+''2021-12-31 16:23:38 INFO: No task queued
+''2021-12-31 16:23:58 INFO: No task queued
+''2021-12-31 16:24:18 INFO: No task queued
+''2021-12-31 16:24:38 INFO: No task queued
+''2021-12-31 16:24:58 INFO: No task queued
+''2021-12-31 16:25:18 INFO: No task queued
+''2021-12-31 16:25:38 INFO: No task queued
+''2021-12-31 16:25:58 INFO: No task queued
+''2021-12-31 16:26:19 INFO: No task queued
+''2021-12-31 16:26:40 INFO: No task queued
+''2021-12-31 16:26:58 INFO: No task queued
+''2021-12-31 16:27:19 INFO: No task queued
+''2021-12-31 16:27:38 INFO: No task queued
+''2021-12-31 16:27:58 INFO: No task queued
+''2021-12-31 16:28:18 INFO: No task queued
+''2021-12-31 16:28:38 INFO: No task queued
+''2021-12-31 16:28:59 INFO: No task queued
+''2021-12-31 16:29:22 INFO: No task queued
+''2021-12-31 16:29:42 INFO: No task queued
+''2021-12-31 16:29:59 INFO: No task queued
+''2021-12-31 16:30:18 INFO: No task queued
+''2021-12-31 16:30:38 INFO: No task queued
+''2021-12-31 16:30:58 INFO: No task queued
+''2021-12-31 16:31:18 INFO: No task queued
+''2021-12-31 16:31:38 INFO: No task queued
+''2021-12-31 16:32:01 INFO: No task queued
+''2021-12-31 16:32:18 INFO: No task queued
+''2021-12-31 16:32:39 INFO: No task queued
+''2021-12-31 16:32:58 INFO: No task queued
+''2021-12-31 16:33:18 INFO: No task queued
+''2021-12-31 16:33:38 INFO: No task queued
+''2021-12-31 16:33:58 INFO: No task queued
+''2021-12-31 16:34:18 INFO: No task queued
+''2021-12-31 16:34:38 INFO: No task queued
+''2021-12-31 16:34:58 INFO: No task queued
+''2021-12-31 16:35:18 INFO: No task queued
+''2021-12-31 16:35:38 INFO: No task queued
+''2021-12-31 16:35:58 INFO: No task queued
+''2021-12-31 16:36:18 INFO: No task queued
+''2021-12-31 16:36:39 INFO: No task queued
+''2021-12-31 16:36:59 INFO: No task queued
+''2021-12-31 16:37:18 INFO: No task queued
+''2021-12-31 16:37:38 INFO: No task queued
+''2021-12-31 16:37:58 INFO: No task queued
+''2021-12-31 16:38:18 INFO: No task queued
+''2021-12-31 16:38:38 INFO: No task queued
+''2021-12-31 16:38:58 INFO: No task queued
+''2021-12-31 16:39:18 INFO: No task queued
+''2021-12-31 16:39:38 INFO: No task queued
+''2021-12-31 16:39:58 INFO: No task queued
+''2021-12-31 16:40:18 INFO: No task queued
+''2021-12-31 16:40:38 INFO: No task queued
+''2021-12-31 16:40:58 INFO: No task queued
+''2021-12-31 16:41:18 INFO: No task queued
+''2021-12-31 16:41:38 INFO: No task queued
+''2021-12-31 16:41:58 INFO: No task queued
+''2021-12-31 16:42:18 INFO: No task queued
+''2021-12-31 16:42:38 INFO: No task queued
+''2021-12-31 16:42:58 INFO: No task queued
+''2021-12-31 16:43:18 INFO: No task queued
+''2021-12-31 16:43:38 INFO: No task queued
+''2021-12-31 16:43:59 INFO: No task queued
+''2021-12-31 16:44:18 INFO: No task queued
+''2021-12-31 16:44:38 INFO: No task queued
+''2021-12-31 16:44:58 INFO: No task queued
+''2021-12-31 16:45:18 INFO: No task queued
+''2021-12-31 16:45:38 INFO: No task queued
+''2021-12-31 16:45:58 INFO: No task queued
+''2021-12-31 16:46:18 INFO: No task queued
+''2021-12-31 16:46:38 INFO: No task queued
+''2021-12-31 16:46:58 INFO: No task queued
+''2021-12-31 16:47:18 INFO: No task queued
+''2021-12-31 16:47:38 INFO: No task queued
+''2021-12-31 16:47:58 INFO: No task queued
+''2021-12-31 16:48:18 INFO: No task queued
+''2021-12-31 16:48:38 INFO: No task queued
+''2021-12-31 16:48:58 INFO: No task queued
+''2021-12-31 16:49:18 INFO: No task queued
+''2021-12-31 16:49:38 INFO: No task queued
+''2021-12-31 16:49:58 INFO: No task queued
+''2021-12-31 16:50:18 INFO: No task queued
+''2021-12-31 16:50:38 INFO: No task queued
+''2021-12-31 16:50:58 INFO: No task queued
+''2021-12-31 16:51:18 INFO: No task queued
+''2021-12-31 16:51:38 INFO: No task queued
+''2021-12-31 16:51:58 INFO: No task queued
+''2021-12-31 16:52:18 INFO: No task queued
+''2021-12-31 16:52:38 INFO: No task queued
+''2021-12-31 16:52:58 INFO: No task queued
+''2021-12-31 16:53:18 INFO: No task queued
+''2021-12-31 16:53:38 INFO: No task queued
+''2021-12-31 16:53:58 INFO: No task queued
+''2021-12-31 16:54:18 INFO: No task queued
+''2021-12-31 16:54:38 INFO: No task queued
+''2021-12-31 16:54:58 INFO: No task queued
+''2021-12-31 16:55:18 INFO: No task queued
+''2021-12-31 16:55:38 INFO: No task queued
+''2021-12-31 16:55:58 INFO: No task queued
+''2021-12-31 16:56:18 INFO: No task queued
+''2021-12-31 16:56:38 INFO: No task queued
+''2021-12-31 16:56:58 INFO: No task queued
+''2021-12-31 16:57:18 INFO: No task queued
+''2021-12-31 16:57:38 INFO: No task queued
+''2021-12-31 16:57:58 INFO: No task queued
+''2021-12-31 16:58:18 INFO: No task queued
+''2021-12-31 16:58:38 INFO: No task queued
+''2021-12-31 16:58:58 INFO: No task queued
+''2021-12-31 16:59:18 INFO: No task queued
+''2021-12-31 16:59:38 INFO: No task queued
+''2021-12-31 16:59:58 INFO: No task queued
+''2021-12-31 17:00:18 INFO: No task queued
+''2021-12-31 17:00:38 INFO: No task queued
+''2021-12-31 17:00:58 INFO: No task queued
+''2021-12-31 17:01:18 INFO: No task queued
+''2021-12-31 17:01:38 INFO: No task queued
+''2021-12-31 17:01:58 INFO: No task queued
+''2021-12-31 17:02:18 INFO: No task queued
+''2021-12-31 17:02:38 INFO: No task queued
+''2021-12-31 17:02:58 INFO: No task queued
+''2021-12-31 17:03:18 INFO: No task queued
+''2021-12-31 17:03:38 INFO: No task queued
+''2021-12-31 17:03:58 INFO: No task queued
+''2021-12-31 17:04:18 INFO: No task queued
+''2021-12-31 17:04:38 INFO: No task queued
+''2021-12-31 17:04:58 INFO: No task queued
+''2021-12-31 17:05:18 INFO: No task queued
+''2021-12-31 17:05:38 INFO: No task queued
+''2021-12-31 17:05:58 INFO: No task queued
+''2021-12-31 17:06:18 INFO: No task queued
+''2021-12-31 17:06:38 INFO: No task queued
+''2021-12-31 17:06:58 INFO: No task queued
+''2021-12-31 17:07:18 INFO: No task queued
+''2021-12-31 17:07:38 INFO: No task queued
+''2021-12-31 17:07:58 INFO: No task queued
+''2021-12-31 17:08:18 INFO: No task queued
+''2021-12-31 17:08:38 INFO: No task queued
+''2021-12-31 17:08:58 INFO: No task queued
+''2021-12-31 17:09:18 INFO: No task queued
+''2021-12-31 17:09:38 INFO: No task queued
+''2021-12-31 17:09:58 INFO: No task queued
+''2021-12-31 17:10:18 INFO: No task queued
+''2021-12-31 17:10:38 INFO: No task queued
+''2021-12-31 17:10:58 INFO: No task queued
+''2021-12-31 17:11:18 INFO: No task queued
+''2021-12-31 17:11:38 INFO: No task queued
+''2021-12-31 17:11:58 INFO: No task queued
+''2021-12-31 17:12:18 INFO: No task queued
+''2021-12-31 17:12:38 INFO: No task queued
+''2021-12-31 17:12:58 INFO: No task queued
+''2021-12-31 17:13:18 INFO: No task queued
+''2021-12-31 17:13:38 INFO: No task queued
+''2021-12-31 17:13:58 INFO: No task queued
+''2021-12-31 17:14:18 INFO: No task queued
+''2021-12-31 17:14:38 INFO: No task queued
+''2021-12-31 17:14:58 INFO: No task queued
+''2021-12-31 17:15:18 INFO: No task queued
+''2021-12-31 17:15:38 INFO: No task queued
+''2021-12-31 17:15:58 INFO: No task queued
+''2021-12-31 17:16:18 INFO: No task queued
+''2021-12-31 17:16:38 INFO: No task queued
+''2021-12-31 17:16:58 INFO: No task queued
+''2021-12-31 17:17:18 INFO: No task queued
+''2021-12-31 17:17:38 INFO: No task queued
+''2021-12-31 17:17:58 INFO: No task queued
+''2021-12-31 17:18:18 INFO: No task queued
+''2021-12-31 17:18:38 INFO: No task queued
+''2021-12-31 17:18:58 INFO: No task queued
+''2021-12-31 17:19:18 INFO: No task queued
+''2021-12-31 17:19:38 INFO: No task queued
+''2021-12-31 17:19:58 INFO: No task queued
+''2021-12-31 17:20:18 INFO: No task queued
+''2021-12-31 17:20:38 INFO: No task queued
+''2021-12-31 17:20:58 INFO: No task queued
+''2021-12-31 17:21:18 INFO: No task queued
+''2021-12-31 17:21:38 INFO: No task queued
+''2021-12-31 17:21:58 INFO: No task queued
+''2021-12-31 17:22:18 INFO: No task queued
+''2021-12-31 17:22:38 INFO: No task queued
+''2021-12-31 17:22:58 INFO: No task queued
+''2021-12-31 17:23:18 INFO: No task queued
+''2021-12-31 17:23:38 INFO: No task queued
+''2021-12-31 17:23:58 INFO: No task queued
+''2021-12-31 17:24:18 INFO: No task queued
+''2021-12-31 17:24:38 INFO: No task queued
+''2021-12-31 17:24:58 INFO: No task queued
+''2021-12-31 17:25:18 INFO: No task queued
+''2021-12-31 17:25:38 INFO: No task queued
+''2021-12-31 17:25:58 INFO: No task queued
+''2021-12-31 17:26:18 INFO: No task queued
+''2021-12-31 17:26:38 INFO: No task queued
+''2021-12-31 17:26:58 INFO: No task queued
+''2021-12-31 17:27:18 INFO: No task queued
+''2021-12-31 17:27:38 INFO: No task queued
+''2021-12-31 17:27:58 INFO: No task queued
+''2021-12-31 17:28:18 INFO: No task queued
+''2021-12-31 17:28:38 INFO: No task queued
+''2021-12-31 17:28:58 INFO: No task queued
+''2021-12-31 17:29:18 INFO: No task queued
+''2021-12-31 17:29:38 INFO: No task queued
+''2021-12-31 17:29:58 INFO: No task queued
+''2021-12-31 17:30:18 INFO: No task queued
+''2021-12-31 17:30:38 INFO: No task queued
+''2021-12-31 17:30:58 INFO: No task queued
+''2021-12-31 17:31:18 INFO: No task queued
+''2021-12-31 17:31:38 INFO: No task queued
+''2021-12-31 17:31:58 INFO: No task queued
+''2021-12-31 17:32:18 INFO: No task queued
+''2021-12-31 17:32:38 INFO: No task queued
+''2021-12-31 17:32:58 INFO: No task queued
+''2021-12-31 17:33:18 INFO: No task queued
+''2021-12-31 17:33:38 INFO: No task queued
+''2021-12-31 17:33:58 INFO: No task queued
+''2021-12-31 17:34:18 INFO: No task queued
+''2021-12-31 17:34:38 INFO: No task queued
+''2021-12-31 17:34:58 INFO: No task queued
+''2021-12-31 17:35:18 INFO: No task queued
+''2021-12-31 17:35:38 INFO: No task queued
+''2021-12-31 17:35:58 INFO: No task queued
+''2021-12-31 17:36:18 INFO: No task queued
+''2021-12-31 17:36:38 INFO: No task queued
+''2021-12-31 17:36:58 INFO: No task queued
+''2021-12-31 17:37:18 INFO: No task queued
+''2021-12-31 17:37:38 INFO: No task queued
+''2021-12-31 17:37:58 INFO: No task queued
+''2021-12-31 17:38:18 INFO: No task queued
+''2021-12-31 17:38:38 INFO: No task queued
+''2021-12-31 17:38:58 INFO: No task queued
+''2021-12-31 17:39:18 INFO: No task queued
+''2021-12-31 17:39:38 INFO: No task queued
+''2021-12-31 17:39:58 INFO: No task queued
+''2021-12-31 17:40:18 INFO: No task queued
+''2021-12-31 17:40:38 INFO: No task queued
+''2021-12-31 17:40:58 INFO: No task queued
+''2021-12-31 17:41:18 INFO: No task queued
+''2021-12-31 17:41:38 INFO: No task queued
+''2021-12-31 17:41:58 INFO: No task queued
+''2021-12-31 17:42:18 INFO: No task queued
+''2021-12-31 17:42:38 INFO: No task queued
+''2021-12-31 17:42:58 INFO: No task queued
+''2021-12-31 17:43:18 INFO: No task queued
+''2021-12-31 17:43:39 INFO: No task queued
+''2021-12-31 17:43:58 INFO: No task queued
+''2021-12-31 17:44:18 INFO: No task queued
+''2021-12-31 17:44:38 INFO: No task queued
+''2021-12-31 17:44:58 INFO: No task queued
+''2021-12-31 17:45:19 INFO: No task queued
+''2021-12-31 17:45:38 INFO: No task queued
+''2021-12-31 17:45:58 INFO: No task queued
+''2021-12-31 17:46:18 INFO: No task queued
+''2021-12-31 17:46:38 INFO: No task queued
+''2021-12-31 17:46:58 INFO: No task queued
+''2021-12-31 17:47:18 INFO: No task queued
+''2021-12-31 17:47:38 INFO: No task queued
+''2021-12-31 17:47:58 INFO: No task queued
+''2021-12-31 17:48:18 INFO: No task queued
+''2021-12-31 17:48:38 INFO: No task queued
+''2021-12-31 17:48:58 INFO: No task queued
+''2021-12-31 17:49:18 INFO: No task queued
+''2021-12-31 17:49:38 INFO: No task queued
+''2021-12-31 17:49:59 INFO: No task queued
+''2021-12-31 17:50:19 INFO: No task queued
+''2021-12-31 17:50:40 INFO: No task queued
+''2021-12-31 17:50:59 INFO: No task queued
+''2021-12-31 17:51:19 INFO: No task queued
+''2021-12-31 17:51:39 INFO: No task queued
+''2021-12-31 17:51:59 INFO: No task queued
+''2021-12-31 17:52:18 INFO: No task queued
+''2021-12-31 17:52:38 INFO: No task queued
+''2021-12-31 17:52:59 INFO: No task queued
+''2021-12-31 17:53:19 INFO: No task queued
+''2021-12-31 17:53:39 INFO: No task queued
+''2021-12-31 17:53:59 INFO: No task queued
+''2021-12-31 17:54:18 INFO: No task queued
+''2021-12-31 17:54:38 INFO: No task queued
+''2021-12-31 17:54:58 INFO: No task queued
+''2021-12-31 17:55:19 INFO: No task queued
+''2021-12-31 17:55:39 INFO: No task queued
+''2021-12-31 17:55:59 INFO: No task queued
+''2021-12-31 17:56:18 INFO: No task queued
+''2021-12-31 17:56:38 INFO: No task queued
+''2021-12-31 17:56:58 INFO: No task queued
+''2021-12-31 17:57:19 INFO: No task queued
+''2021-12-31 17:57:39 INFO: No task queued
+''2021-12-31 17:57:59 INFO: No task queued
+''2021-12-31 17:58:19 INFO: No task queued
+''2021-12-31 17:58:38 INFO: No task queued
+''2021-12-31 17:58:58 INFO: No task queued
+''2021-12-31 17:59:19 INFO: No task queued
+''2021-12-31 17:59:39 INFO: No task queued
+''2021-12-31 17:59:59 INFO: No task queued
+''2021-12-31 18:00:19 INFO: No task queued
+''2021-12-31 18:00:38 INFO: No task queued
+''2021-12-31 18:00:58 INFO: No task queued
+''2021-12-31 18:01:18 INFO: No task queued
+''2021-12-31 18:01:39 INFO: No task queued
+''2021-12-31 18:01:59 INFO: No task queued
+''2021-12-31 18:02:21 INFO: No task queued
+''2021-12-31 18:02:39 INFO: No task queued
+''2021-12-31 18:02:59 INFO: No task queued
+''2021-12-31 18:03:18 INFO: No task queued
+''2021-12-31 18:03:38 INFO: No task queued
+''2021-12-31 18:03:58 INFO: No task queued
+''2021-12-31 18:04:18 INFO: No task queued
+''2021-12-31 18:04:38 INFO: No task queued
+''2021-12-31 18:05:02 INFO: No task queued
+''2021-12-31 18:05:18 INFO: No task queued
+''2021-12-31 18:05:38 INFO: No task queued
+''2021-12-31 18:05:59 INFO: No task queued
+''2021-12-31 18:06:22 INFO: No task queued
+''2021-12-31 18:06:38 INFO: No task queued
+''2021-12-31 18:06:58 INFO: No task queued
+''2021-12-31 18:07:18 INFO: No task queued
+''2021-12-31 18:07:38 INFO: No task queued
+''2021-12-31 18:07:59 INFO: No task queued
+''2021-12-31 18:08:18 INFO: No task queued
+''2021-12-31 18:08:38 INFO: No task queued
+''2021-12-31 18:08:59 INFO: No task queued
+''2021-12-31 18:09:18 INFO: No task queued
+''2021-12-31 18:09:38 INFO: No task queued
+''2021-12-31 18:09:58 INFO: No task queued
+''2021-12-31 18:10:18 INFO: No task queued
+''2021-12-31 18:10:38 INFO: No task queued
+''2021-12-31 18:10:58 INFO: No task queued
+''2021-12-31 18:11:18 INFO: No task queued
+''2021-12-31 18:11:38 INFO: No task queued
+''2021-12-31 18:11:58 INFO: No task queued
+''2021-12-31 18:12:18 INFO: No task queued
+''2021-12-31 18:12:38 INFO: No task queued
+''2021-12-31 18:12:58 INFO: No task queued
+''2021-12-31 18:13:18 INFO: No task queued
+'
